@@ -800,6 +800,17 @@
       });
     }
 
+    // 頂部導航分頁標籤點擊高亮
+    const navLinks = document.querySelectorAll('.nav-link');
+    if (navLinks) {
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.forEach(l => l.classList.remove('active'));
+          link.classList.add('active');
+        });
+      });
+    }
+
     // 複製 Prompt
     if (dom.copyFormulaBtn) {
       dom.copyFormulaBtn.addEventListener('click', () => {

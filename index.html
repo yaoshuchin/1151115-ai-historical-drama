@@ -26,37 +26,37 @@
     <div class="container nav-inner">
       <a href="#" class="brand">
         <span class="brand-icon">🎬</span>
-        <div>
-          <span>聰賢老師 · AI 歷史劇創作</span>
+        <div class="brand-text">
+          <span class="brand-title">聰賢老師 · AI 歷史劇創作</span>
           <span class="brand-badge">Google Flow × Veo 3.1</span>
         </div>
       </a>
 
-      <!-- 頁籤導航 -->
+      <!-- 頁籤導航膠囊列 -->
       <nav class="nav-links">
-        <a href="#hero" class="nav-link active"><i class="fa-solid fa-landmark"></i> 研習總覽</a>
-        <a href="#drama" class="nav-link"><i class="fa-solid fa-masks-theater"></i> 九大歷史名劇</a>
-        <a href="#studio" class="nav-link"><i class="fa-solid fa-scroll"></i> Prompt 工作室</a>
-        <a href="#lab" class="nav-link"><i class="fa-solid fa-user-astronaut"></i> 三視圖定妝照</a>
-        <a href="#deck" class="nav-link"><i class="fa-solid fa-chalkboard-user"></i> 107頁簡報</a>
-        <a href="#toolbox" class="nav-link"><i class="fa-solid fa-toolbox"></i> 剪映與素材包</a>
+        <a href="#hero" class="nav-link active"><i class="fa-solid fa-landmark"></i> <span>研習總覽</span></a>
+        <a href="#drama" class="nav-link"><i class="fa-solid fa-masks-theater"></i> <span>歷史名劇</span></a>
+        <a href="#studio" class="nav-link"><i class="fa-solid fa-scroll"></i> <span>Prompt 庫</span></a>
+        <a href="#lab" class="nav-link"><i class="fa-solid fa-user-astronaut"></i> <span>三視定妝</span></a>
+        <a href="#deck" class="nav-link"><i class="fa-solid fa-chalkboard-user"></i> <span>107頁簡報</span></a>
+        <a href="#toolbox" class="nav-link"><i class="fa-solid fa-toolbox"></i> <span>剪映與素材</span></a>
       </nav>
 
       <!-- 輔助工具群組 -->
       <div class="nav-tools">
         <!-- 主題選擇 -->
-        <select id="themeSelect" class="tool-btn" title="切換色彩風格主題">
+        <select id="themeSelect" class="nav-select" title="切換色彩風格主題">
           <option value="imperial">👑 赤金華夏</option>
           <option value="obsidian">🌌 玄武墨夜</option>
           <option value="bamboo">🎋 青巒竹影</option>
           <option value="paper">📜 宣紙古籍</option>
         </select>
 
-        <!-- 字級切換 -->
-        <div class="btn-group" title="字級縮放 (樂齡無障礙)">
-          <button id="fontBtnMedium" class="tool-btn active">中</button>
-          <button id="fontBtnLarge" class="tool-btn">大</button>
-          <button id="fontBtnXlarge" class="tool-btn">特大</button>
+        <!-- 字級切換膠囊 -->
+        <div class="font-switch-group" title="字級縮放 (樂齡無障礙)">
+          <button id="fontBtnMedium" class="font-btn active">中</button>
+          <button id="fontBtnLarge" class="font-btn">大</button>
+          <button id="fontBtnXlarge" class="font-btn">特大</button>
         </div>
 
         <!-- 水晶音樂 -->
@@ -66,7 +66,7 @@
         </div>
 
         <!-- 門禁安全鎖 -->
-        <button id="lockBtn" class="tool-btn" title="門禁鎖 (Web Crypto SHA-256)"><i class="fa-solid fa-lock"></i> 上鎖</button>
+        <button id="lockBtn" class="lock-tool-btn" title="門禁鎖 (Web Crypto SHA-256)"><i class="fa-solid fa-lock"></i> <span>上鎖</span></button>
       </div>
     </div>
   </header>
