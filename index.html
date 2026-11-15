@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="zh-TW" data-theme="imperial" data-font-size="medium">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1151115 聰賢老師 · AI 歷史劇創作 × Google Flow 旗艦實戰平台</title>
+  <meta name="description" content="新北市資訊科技名師呂聰賢老師「AI 歷史劇創作 × Google Flow 實戰研習」旗艦成果展示平台，涵蓋九大歷史名劇成片典藏、40位歷史人物 Prompt 生成器、人物三視圖角色一致性實驗室、107頁全系列簡報演講廳與剪映9步後製工坊。">
+  
+  <!-- Google Fonts: 繁體中文字體與古典襯線字體 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@400;600;700;900&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome 6 圖示庫 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- 主樣式表 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       頂部導航列 (Navbar)
+       ========================================== -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="brand">
+        <span class="brand-icon">🎬</span>
+        <div>
+          <span>聰賢老師 · AI 歷史劇創作</span>
+          <span class="brand-badge">Google Flow × Veo 3.1</span>
+        </div>
+      </a>
+
+      <!-- 頁籤導航 -->
+      <nav class="nav-links">
+        <a href="#hero" class="nav-link active"><i class="fa-solid fa-landmark"></i> 研習總覽</a>
+        <a href="#drama" class="nav-link"><i class="fa-solid fa-masks-theater"></i> 九大歷史名劇</a>
+        <a href="#studio" class="nav-link"><i class="fa-solid fa-scroll"></i> Prompt 工作室</a>
+        <a href="#lab" class="nav-link"><i class="fa-solid fa-user-astronaut"></i> 三視圖定妝照</a>
+        <a href="#deck" class="nav-link"><i class="fa-solid fa-chalkboard-user"></i> 107頁簡報</a>
+        <a href="#toolbox" class="nav-link"><i class="fa-solid fa-toolbox"></i> 剪映與素材包</a>
+      </nav>
+
+      <!-- 輔助工具群組 -->
+      <div class="nav-tools">
+        <!-- 主題選擇 -->
+        <select id="themeSelect" class="tool-btn" title="切換色彩風格主題">
+          <option value="imperial">👑 赤金華夏</option>
+          <option value="obsidian">🌌 玄武墨夜</option>
+          <option value="bamboo">🎋 青巒竹影</option>
+          <option value="paper">📜 宣紙古籍</option>
+        </select>
+
+        <!-- 字級切換 -->
+        <div class="btn-group" title="字級縮放 (樂齡無障礙)">
+          <button id="fontBtnMedium" class="tool-btn active">中</button>
+          <button id="fontBtnLarge" class="tool-btn">大</button>
+          <button id="fontBtnXlarge" class="tool-btn">特大</button>
+        </div>
+
+        <!-- 水晶音樂 -->
+        <div class="music-bar" title="Web Audio 古典五音環境音樂">
+          <button id="musicToggleBtn" class="music-btn"><i class="fa-solid fa-volume-xmark"></i></button>
+          <input type="range" id="musicVol" class="music-vol" min="0" max="1" step="0.05" value="0.3" title="音量調節">
+        </div>
+
+        <!-- 門禁安全鎖 -->
+        <button id="lockBtn" class="tool-btn" title="門禁鎖 (Web Crypto SHA-256)"><i class="fa-solid fa-lock"></i> 上鎖</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       主視覺橫幅 (Hero Banner)
+       ========================================== -->
+  <section id="hero" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-tagline">
+          <i class="fa-solid fa-dragon"></i> 教育部 AI 數位精進方案 · 歷史人文跨域影音旗艦
+        </div>
+        <h1 class="hero-title">
+          重現千年風華 <span>AI 歷史劇創作</span><br>Google Flow × 首尾幀奇蹟
+        </h1>
+        <p class="hero-desc">
+          新北市資訊科技教育名師<strong>呂聰賢老師</strong>獨家研發！結合 <strong>Gemini 影片腳本 Agent 代理人</strong>、<strong>Nano Banana 2 / Google Flow (Veo 3.1) 首尾幀結構演算法</strong>，與 <strong>剪映 9 步後製包裝</strong>，以最低算力點數重構四面楚歌、三顧茅廬、王陽明悟道等撼動心靈的電影級歷史名場面。
+        </p>
+
+        <!-- 大師資訊卡 -->
+        <div class="master-profile">
+          <div class="master-avatar">🎓</div>
+          <div class="master-meta">
+            <h4>授課名師：呂聰賢 老師 (新北市資訊科技名師)</h4>
+            <p>教育部數位學習精進方案權威講師 · YouTube 影音創作教學拓荒名師 · Google Flow 實戰導師</p>
+          </div>
+        </div>
+
+        <!-- 動作按鈕 -->
+        <div class="hero-actions">
+          <a href="#drama" class="btn btn-primary"><i class="fa-solid fa-play"></i> 鑑賞九大歷史名劇</a>
+          <a href="#studio" class="btn btn-outline"><i class="fa-solid fa-wand-magic-sparkles"></i> 40 歷史人物 Prompt 生成器</a>
+          <a href="#deck" class="btn btn-outline"><i class="fa-solid fa-tv"></i> 107 頁旗艦投影片巡演</a>
+        </div>
+      </div>
+
+      <!-- 課程海報展演卡片 -->
+      <div class="hero-poster-box">
+        <div class="poster-showcase">
+          <img id="heroPoster" class="poster-img" src="作品集/課程海報/AI歷史劇創作課程海報.png" alt="AI歷史劇創作課程海報" title="點擊放大檢視海報">
+          <div class="poster-overlay">
+            <div class="poster-caption">📜 研習官方宣傳大禮包 (點擊放大)</div>
+            <div class="poster-tabs">
+              <button class="poster-tab-btn active" data-src="作品集/課程海報/AI歷史劇創作課程海報.png">直式海報</button>
+              <button class="poster-tab-btn" data-src="作品集/課程海報/AI歷史劇創作課程宣傳橫幅.png">宣傳橫幅</button>
+              <button class="poster-tab-btn" data-src="作品集/課程海報/AI歷史劇創作課程_banner.png">寬版 Banner</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       創作三劍客流程 (Trio Pipeline)
+       ========================================== -->
+  <section class="trio-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">WORKFLOW TRINITY</span>
+        <h2 class="section-title">AI 歷史劇創作三劍客黃金工作流</h2>
+        <p class="section-desc">從腳本文案到首尾幀視訊生成，再至剪映成片包裝，極速產出 32 秒高張力歷史短片。</p>
+      </div>
+
+      <div class="trio-grid">
+        <div class="trio-card">
+          <span class="trio-step">步驟 01</span>
+          <div class="trio-icon">🤖</div>
+          <h3>Gemini · 影片 Agent 分鏡腳本</h3>
+          <p>安裝自訂 <code>skill.md</code> (ai-video)，選定歷史人物，精準生成 4 小段、每段 8 秒、共 32 秒首尾幀生圖與運鏡 Prompt。</p>
+        </div>
+        <div class="trio-card">
+          <span class="trio-step">步驟 02</span>
+          <div class="trio-icon">⚡</div>
+          <h3>Google Flow · 首尾幀視訊生成</h3>
+          <p>輸入首幀與尾幀圖片，貼入電影級英文運鏡指令，下達「一律核准、連續生成」指令，低點數輸出 v1~v4 高清 MP4。</p>
+        </div>
+        <div class="trio-card">
+          <span class="trio-step">步驟 03</span>
+          <div class="trio-icon">🎬</div>
+          <h3>剪映 CapCut · 九步後製包裝</h3>
+          <p>依序串接視訊、加入文字轉普通話旁白、AI 自動辨識字幕、字幕描邊、古典 BGM 混音與作者署名，無損匯出發布。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       九大歷史劇作品典藏館 (Historical Drama Showcase)
+       ========================================== -->
+  <section id="drama" class="drama-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">DRAMA MASTERPIECES</span>
+        <h2 class="section-title">九大 AI 歷史名劇旗艦典藏館</h2>
+        <p class="section-desc">收錄聰賢老師親自指導與創作之 9 套史詩短劇，涵蓋三國、楚漢、春秋、盛唐、大明與南北朝傳奇。</p>
+      </div>
+
+      <div class="drama-layout">
+        <!-- 左側劇目清單 -->
+        <aside class="drama-sidebar">
+          <div class="drama-list-title">
+            <span><i class="fa-solid fa-list-ul"></i> 經典劇目選單</span>
+            <small style="color:var(--text-muted);">共 9 部經典</small>
+          </div>
+          <div id="dramaListContainer">
+            <!-- 由 app.js 動態渲染 -->
+          </div>
+        </aside>
+
+        <!-- 右側主播放舞台 -->
+        <main class="drama-stage">
+          <div class="stage-header">
+            <div class="stage-title-wrap">
+              <h2 id="stageTitle">三顧茅廬</h2>
+              <div id="stageSubtitle" class="stage-subtitle">劉玄德雪夜顧臥龍 · 隆中定三分</div>
+              <div id="stageBadges" class="stage-badges">
+                <!-- 徽章動態產生 -->
+              </div>
+            </div>
+            <a id="geminiLinkBtn" class="btn btn-outline btn-sm" href="#" target="_blank" rel="noopener">
+              <i class="fa-brands fa-google"></i> 查看 Gemini 原生腳本對話
+            </a>
+          </div>
+
+          <!-- 原生 HTML5 視訊播放器 -->
+          <div class="video-player-wrap">
+            <video id="stageVideo" class="stage-video" controls playsinline preload="metadata">
+              您的瀏覽器不支援 HTML5 視訊播放。
+            </video>
+          </div>
+
+          <!-- 播放模式切換鈕 (成片 vs 分鏡) -->
+          <div id="videoModeNav" class="video-mode-nav">
+            <!-- 由 app.js 動態渲染按鈕 -->
+          </div>
+
+          <!-- 劇情梗概與朗誦詩文 -->
+          <div class="stage-details">
+            <div class="synopsis-box">
+              <div class="box-title"><i class="fa-solid fa-book-open"></i> 歷史劇本與高潮梗概</div>
+              <p id="synopsisText" class="synopsis-text">
+                加載中...
+              </p>
+            </div>
+
+            <div id="poemBox" class="poem-box" style="display:none;">
+              <div class="box-title"><i class="fa-solid fa-feather-pointed"></i> 原創朗誦語音旁白</div>
+              <div id="poemContent" class="poem-content"></div>
+            </div>
+          </div>
+
+          <!-- 配樂試聽與檔案下載列 -->
+          <div class="stage-audio-toolbar">
+            <div class="audio-ctrl">
+              <span style="font-size:0.88rem; color:var(--accent-gold); font-weight:700;">
+                <i class="fa-solid fa-music"></i> 劇目古典配樂：
+              </span>
+              <audio id="stageAudio" class="audio-native" controls preload="metadata"></audio>
+            </div>
+            <div class="stage-downloads">
+              <a id="downloadVideoBtn" class="btn btn-outline btn-sm" href="#" download>
+                <i class="fa-solid fa-download"></i> 下載當前視訊 (MP4)
+              </a>
+              <a id="downloadAudioBtn" class="btn btn-outline btn-sm" href="#" download>
+                <i class="fa-solid fa-file-audio"></i> 下載配樂 (MP3)
+              </a>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Prompt Studio & 40 歷史人物靈感庫
+       ========================================== -->
+  <section id="studio" class="studio-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">PROMPT ARCHITECT STUDIO</span>
+        <h2 class="section-title">歷史短劇生成公式與 40 歷史人物 Prompt 工作室</h2>
+        <p class="section-desc">點選任一歷史人物，即刻自動合成聰賢老師獨家「4 小段、每段 8 秒、共 32 秒」首尾幀生成 Prompt！</p>
+      </div>
+
+      <div class="studio-layout">
+        <!-- 左側：40 歷史人物選取器 -->
+        <div class="char-picker-panel">
+          <div class="char-filter-bar">
+            <button class="filter-btn active char-filter-btn" data-category="全部">全部 (40)</button>
+            <button class="filter-btn char-filter-btn" data-category="哲學先賢">哲學先賢</button>
+            <button class="filter-btn char-filter-btn" data-category="兵法軍神">兵法軍神</button>
+            <button class="filter-btn char-filter-btn" data-category="帝王霸主">帝王霸主</button>
+            <button class="filter-btn char-filter-btn" data-category="文學史家">文學史家</button>
+            <button class="filter-btn char-filter-btn" data-category="科學名醫">科學名醫</button>
+            <button class="filter-btn char-filter-btn" data-category="傳奇巾幗">傳奇巾幗</button>
+          </div>
+          <input type="text" id="charSearchInput" class="char-search" placeholder="🔍 搜尋歷史人物姓名、稱號或朝代 (如：李白、諸葛亮、大明...)">
+          
+          <div id="charGrid" class="char-grid">
+            <!-- 由 app.js 動態注入 40 位歷史人物卡片 -->
+          </div>
+
+          <!-- 自動化要訣小卡 -->
+          <div style="margin-top:16px; background:var(--card-bg); border:1px solid var(--card-border); border-radius:10px; padding:14px; font-size:0.86rem;">
+            <strong style="color:var(--accent-gold);"><i class="fa-solid fa-lightbulb"></i> Google Flow 自動化串接要訣：</strong>
+            <p style="color:var(--text-muted); margin-top:4px;">
+              貼上腳本後，鍵入 <code>Shift + Enter</code> 換行，加上指令：「請生成首尾幀圖片，再生成第1段影片，加上音效與普通話旁白。使用相同方法將2,3,4段依序生成。一律核准所有工作命令，不再詢問確認！」即可實現全自動批次運算。
+            </p>
+          </div>
+        </div>
+
+        <!-- 右側：生成的 Prompt 輸出與一鍵複製 -->
+        <div class="formula-card">
+          <div class="formula-header">
+            <div class="formula-title"><i class="fa-solid fa-terminal"></i> 即時生成的 @ai-video 指令庫</div>
+            <button id="copyFormulaBtn" class="btn btn-primary btn-sm">
+              <i class="fa-regular fa-copy"></i> 一鍵複製 Prompt
+            </button>
+          </div>
+          <pre id="formulaOutput" class="code-block">
+點選左側歷史人物以生成專屬短劇腳本指令...
+          </pre>
+          <div style="font-size:0.84rem; color:var(--text-muted); display:flex; justify-content:space-between; align-items:center;">
+            <span>提示：產出的 Prompt 可直接貼入 Gemini 啟動 @ai-video 代理人。</span>
+            <a href="skill.md" download="skill.md" class="btn btn-outline btn-sm">
+              <i class="fa-solid fa-file-code"></i> 下載 skill.md
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       角色一致性與三視圖定妝照 (Character Lab)
+       ========================================== -->
+  <section id="lab" class="character-lab-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">CHARACTER CONSISTENCY LAB</span>
+        <h2 class="section-title">人物三視圖定妝照與固定角色聲音技術</h2>
+        <p class="section-desc">徹底告別 AI 人物「每幀變臉」與服裝漂移！聰賢老師解構多視角定妝照與聲線鎖定法門。</p>
+      </div>
+
+      <div class="lab-grid">
+        <div class="lab-card">
+          <div class="lab-view-icon"><i class="fa-regular fa-user"></i></div>
+          <h4>正面直視 (Front View)</h4>
+          <p>錨定面部五官骨相、眉宇氣質、瞳孔色澤與髮髻髮飾，建立高精度人臉識別基底。</p>
+        </div>
+        <div class="lab-card">
+          <div class="lab-view-icon"><i class="fa-solid fa-arrows-split-up-and-left"></i></div>
+          <h4>45 度半側 (45° Angle)</h4>
+          <p>呈現鼻樑挺拔度、下顎線弧度與立體服裝剪裁，確保斜角運鏡時空間關係不塌陷。</p>
+        </div>
+        <div class="lab-card">
+          <div class="lab-view-icon"><i class="fa-solid fa-arrows-left-right"></i></div>
+          <h4>正側面 (Profile View)</h4>
+          <p>定義頭飾厚度、後腦輪廓、佩劍懸掛位置與衣褶垂墜感，提供流暢轉身過渡幀。</p>
+        </div>
+        <div class="lab-card">
+          <div class="lab-view-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h4>背部視圖 (Back View)</h4>
+          <p>展示背部披風圖騰、鎧甲鱗片編織與腰帶束帶細節，支撐背影離去之大師鏡頭。</p>
+        </div>
+      </div>
+
+      <!-- 三視圖生成指令模板 -->
+      <div style="margin-top:36px; background:var(--card-bg); border:1px solid var(--card-border); border-radius:14px; padding:24px;">
+        <h3 style="color:var(--accent-gold); font-size:1.15rem; margin-bottom:12px;">
+          <i class="fa-solid fa-camera-retro"></i> 聰賢老師 · 角色三視圖定妝照 Prompt 標準公式
+        </h3>
+        <p style="font-size:0.92rem; color:var(--text-muted); margin-bottom:14px;">
+          在生圖模型（Imagen 3 / Nano Banana 2）中輸入以下模板，即可產出純白背景、16:9 電影規格的角色三視圖：
+        </p>
+        <pre class="code-block">
+Character Sheet of an ancient Chinese martial arts warrior / historical hero, 16:9 aspect ratio, pure white background. 
+Orthographic multiple views in a single frame: full-body front view, 45-degree angle view, profile side view, and back view. 
+At the bottom, an Expressions Panel featuring: calm determination, fierce battle shout, and gentle smile. 
+Extremely detailed historical costume with silk embroidery, leather armor plates, and ornate sword scabbard. 
+Photorealistic cinematic style, 8k resolution, studio lighting, hyper-detailed facial consistency.
+        </pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       百頁旗艦簡報演講廳 (Master Slides Deck - 107 頁)
+       ========================================== -->
+  <section id="deck" class="slides-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">INTERACTIVE PRESENTATION DECK</span>
+        <h2 class="section-title">全系列 107 頁旗艦簡報演講廳</h2>
+        <p class="section-desc">包含 Google Flow 完整工作流程、安裝上手、虛擬分身、角色固定與剪映 33 頁後製指南！</p>
+      </div>
+
+      <div class="deck-container">
+        <!-- 分類過濾列 -->
+        <div class="deck-cat-bar">
+          <button class="deck-cat-btn active" data-cat="all">全部投影片 (107 頁)</button>
+          <button class="deck-cat-btn" data-cat="工作流程">01. Google Flow 工作流程篇 (32 頁)</button>
+          <button class="deck-cat-btn" data-cat="安裝">02. Google Flow 安裝設定篇 (10 頁)</button>
+          <button class="deck-cat-btn" data-cat="虛擬形象">03. 創建虛擬形象個人分身篇 (19 頁)</button>
+          <button class="deck-cat-btn" data-cat="固定人物">04. 主角固定人物與聲音篇 (13 頁)</button>
+          <button class="deck-cat-btn" data-cat="後製">05. 剪映 AI 影片後製篇 (33 頁)</button>
+        </div>
+
+        <!-- 投影視窗 -->
+        <div class="deck-viewport-wrap">
+          <img id="deckSlideImg" class="deck-slide-img" src="slides_img/slide_001.png" alt="投影片放映畫面">
+          <!-- 畫筆白板畫布 -->
+          <canvas id="wbCanvas" class="whiteboard-canvas"></canvas>
+        </div>
+
+        <!-- 簡報控制列 -->
+        <div class="deck-controls-bar">
+          <div class="deck-meta-info">
+            <span id="slideCounter" class="slide-counter">1 / 107</span>
+            <span id="slideTitleDisplay" class="slide-title-display">【工作流程篇】Google Flow 工作流程</span>
+          </div>
+
+          <div class="deck-btn-group">
+            <button id="prevSlideBtn" class="btn btn-outline btn-sm"><i class="fa-solid fa-arrow-left"></i> 上一頁</button>
+            <button id="nextSlideBtn" class="btn btn-primary btn-sm">下一頁 <i class="fa-solid fa-arrow-right"></i></button>
+            <button id="autoPlayBtn" class="btn btn-outline btn-sm"><i class="fa-solid fa-play"></i> 自動輪播</button>
+            <button id="fullscreenBtn" class="btn btn-outline btn-sm"><i class="fa-solid fa-expand"></i> 全螢幕 (F)</button>
+            <button id="notesToggleBtn" class="btn btn-outline btn-sm"><i class="fa-solid fa-sticky-note"></i> 講稿備忘 (N)</button>
+          </div>
+        </div>
+
+        <!-- 講稿筆記抽屜 -->
+        <div id="notesDrawer" class="notes-drawer">
+          <strong>💡 講稿筆記：</strong> 開始神奇的 AI 創作之旅，開啟 Google Flow 人工智慧影片創作大門。
+        </div>
+
+        <!-- 底部 107 頁縮圖抽屜 -->
+        <div id="thumbDrawer" class="thumb-drawer">
+          <!-- 由 app.js 動態注入縮圖 -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       微型正下方白板畫筆工具列 (Ultra-compact Dock)
+       ========================================== -->
+  <div id="wbDock" class="wb-dock hidden">
+    <button class="wb-tool-btn active" data-tool="pen" title="手寫筆 (Pen)"><i class="fa-solid fa-pen"></i></button>
+    <button class="wb-tool-btn" data-tool="highlighter" title="螢光筆 (Highlighter)"><i class="fa-solid fa-highlighter"></i></button>
+    <button class="wb-tool-btn" data-tool="line" title="直線 (Line)"><i class="fa-solid fa-minus"></i></button>
+    <button class="wb-tool-btn" data-tool="arrow" title="指示箭頭 (Arrow)"><i class="fa-solid fa-arrow-right"></i></button>
+    <button class="wb-tool-btn" data-tool="rect" title="外框矩形 (Rectangle)"><i class="fa-regular fa-square"></i></button>
+    <button class="wb-tool-btn" data-tool="circle" title="圓形 (Circle)"><i class="fa-regular fa-circle"></i></button>
+    <button class="wb-tool-btn" data-tool="eraser" title="橡皮擦 (Eraser)"><i class="fa-solid fa-eraser"></i></button>
+
+    <div class="wb-divider"></div>
+
+    <!-- 5 色調色盤 -->
+    <div class="wb-color-picker">
+      <div class="wb-color-dot active" data-color="#e5b95c" style="background:#e5b95c;" title="赤金色"></div>
+      <div class="wb-color-dot" data-color="#c93737" style="background:#c93737;" title="硃砂紅"></div>
+      <div class="wb-color-dot" data-color="#38a169" style="background:#38a169;" title="翠竹綠"></div>
+      <div class="wb-color-dot" data-color="#4299e1" style="background:#4299e1;" title="青天藍"></div>
+      <div class="wb-color-dot" data-color="#ffffff" style="background:#ffffff;" title="亮白色"></div>
+    </div>
+
+    <div class="wb-divider"></div>
+
+    <button id="wbUndoBtn" class="wb-tool-btn" title="復原上一筆 (Ctrl+Z)"><i class="fa-solid fa-rotate-left"></i></button>
+    <button id="wbClearBtn" class="wb-tool-btn" title="清空全部標記"><i class="fa-solid fa-trash-can"></i></button>
+    <button id="wbCloseBtn" class="wb-tool-btn" title="收合工具列 (Esc)"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+
+  <!-- 浮動畫筆喚醒鈕 -->
+  <button id="wbTogglePill" class="wb-toggle-pill" title="開關白板標記畫筆 (快捷鍵 D / P)">
+    <i class="fa-solid fa-pen-nib"></i> 白板畫筆 (D)
+  </button>
+
+  <!-- ==========================================
+       剪映 9 步後製工坊與素材大禮包 (Toolbox & Downloads)
+       ========================================== -->
+  <section id="toolbox" class="toolbox-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">POST-PRODUCTION WORKSHOP</span>
+        <h2 class="section-title">剪映 AI 影片後製九大步驟與素材大禮包</h2>
+        <p class="section-desc">遵循聰賢老師標準 SOP，將生成的多段視訊整合為院線級歷史短片成片。</p>
+      </div>
+
+      <!-- 剪映 9 步卡片 -->
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">1</div>
+          <div class="step-info">
+            <h4>匯入素材</h4>
+            <p>將下載的 v1~v4 視訊片段、封面/封底圖片及 BGM 配樂批量拉入素材庫。</p>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-num">2</div>
+          <div class="step-info">
+            <h4>時間軸串接</h4>
+            <p>依據分鏡腳本時間順序將視訊排入主軌道，封面置於片頭、封底置於片尾。</p>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-num">3</div>
+          <div class="step-info">
+            <h4>文字轉語音</h4>
+            <p>在剪映中貼入旁白文案，選取溫潤儒雅之普通話男聲/女聲合成旁白音軌。</p>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-num">4</div>
+          <div class="step-info">
+            <h4>AI 上字幕</h4>
+            <p>啟用剪映「智慧字幕」功能，一鍵將語音轉換為同步動態文字卡。</p>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-num">5</div>
+          <div class="step-info">
+            <h4>字幕描邊美化</h4>
+            <p>設定字體為書法楷體或魏碑體，加上黑色外描邊或金邊，增強古風辨識度。</p>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-num">6</div>
+          <div class="step-info">
+            <h4>加入影片標題</h4>
+            <p>於片頭封面處加上書法風格主標題與副標題，配置微幅淡入縮放特效。</p>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-num">7</div>
+          <div class="step-info">
+            <h4>作者署名</h4>
+            <p>於畫面角落或片尾明確標註創作者名稱、指導老師及 AI 生成宣告。</p>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-num">8</div>
+          <div class="step-info">
+            <h4>背景音樂混音</h4>
+            <p>置入古典國樂 BGM，調整音量壓低至 -18dB~-22dB，確保人聲旁白清晰。</p>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-num">9</div>
+          <div class="step-info">
+            <h4>高畫質匯出</h4>
+            <p>輸出 1080P/4K 高碼率 MP4，同步匯出 MP3 音訊，發布至教學平台與社群。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 全套實體檔案下載清單 -->
+      <div class="downloads-panel">
+        <h3 style="color:var(--accent-gold); font-size:1.3rem; margin-bottom:8px;">
+          <i class="fa-solid fa-box-archive"></i> 本機全套實體教材大禮包下載清單
+        </h3>
+        <p style="font-size:0.92rem; color:var(--text-muted);">本站所有檔案均已本機實體典藏，點擊即可無延遲直接下載：</p>
+
+        <div class="downloads-grid">
+          <a class="download-item" href="00_AI 影片 Agent 代理人創作.docx" download>
+            <div class="file-meta">
+              <h5>00_AI 影片 Agent 代理人創作.docx</h5>
+              <span>Word 研習操作完整手冊 · 110 KB</span>
+            </div>
+            <i class="fa-solid fa-file-word" style="color:#4299e1; font-size:1.4rem;"></i>
+          </a>
+
+          <a class="download-item" href="01_Google Flow 工作流程.pptx" download>
+            <div class="file-meta">
+              <h5>01_Google Flow 工作流程.pptx</h5>
+              <span>PowerPoint 核心講義 (32頁) · 12.9 MB</span>
+            </div>
+            <i class="fa-solid fa-file-powerpoint" style="color:#d97736; font-size:1.4rem;"></i>
+          </a>
+
+          <a class="download-item" href="02_Google Flow 安裝.pptx" download>
+            <div class="file-meta">
+              <h5>02_Google Flow 安裝.pptx</h5>
+              <span>PowerPoint 安裝上手 (10頁) · 5.3 MB</span>
+            </div>
+            <i class="fa-solid fa-file-powerpoint" style="color:#d97736; font-size:1.4rem;"></i>
+          </a>
+
+          <a class="download-item" href="03_創建虛擬形象個人分身.pptx" download>
+            <div class="file-meta">
+              <h5>03_創建虛擬形象個人分身.pptx</h5>
+              <span>PowerPoint 分身實作 (19頁) · 11.3 MB</span>
+            </div>
+            <i class="fa-solid fa-file-powerpoint" style="color:#d97736; font-size:1.4rem;"></i>
+          </a>
+
+          <a class="download-item" href="04_主角固定人物和聲音.pptx" download>
+            <div class="file-meta">
+              <h5>04_主角固定人物和聲音.pptx</h5>
+              <span>PowerPoint 固定聲音 (13頁) · 4.2 MB</span>
+            </div>
+            <i class="fa-solid fa-file-powerpoint" style="color:#d97736; font-size:1.4rem;"></i>
+          </a>
+
+          <a class="download-item" href="06_人物三視圖定妝照.docx" download>
+            <div class="file-meta">
+              <h5>06_人物三視圖定妝照.docx</h5>
+              <span>Word 定妝照指令手冊 · 18.0 MB</span>
+            </div>
+            <i class="fa-solid fa-file-word" style="color:#4299e1; font-size:1.4rem;"></i>
+          </a>
+
+          <a class="download-item" href="07_剪映 AI 影片後製.pdf" download>
+            <div class="file-meta">
+              <h5>07_剪映 AI 影片後製.pdf</h5>
+              <span>PDF 高階後製全手冊 (33頁) · 16.4 MB</span>
+            </div>
+            <i class="fa-solid fa-file-pdf" style="color:#c93737; font-size:1.4rem;"></i>
+          </a>
+
+          <a class="download-item" href="skill.md" download="skill.md">
+            <div class="file-meta">
+              <h5>skill.md (ai-video 代理人技能檔)</h5>
+              <span>Gemini 影片技能設定標準檔 · 3 KB</span>
+            </div>
+            <i class="fa-solid fa-robot" style="color:var(--accent-gold); font-size:1.4rem;"></i>
+          </a>
+
+          <div class="download-item" style="cursor:pointer;" onclick="openLightbox('qrcode.png', '掃描 QR Code 手機直達本平台')">
+            <div class="file-meta">
+              <h5>qrcode.png (平台行動版分享碼)</h5>
+              <span>點擊放大檢視 330×330 高清 QR 碼</span>
+            </div>
+            <i class="fa-solid fa-qrcode" style="color:var(--accent-gold); font-size:1.4rem;"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       頁尾 (Footer)
+       ========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <p style="font-size:1.05rem; font-weight:700; color:var(--accent-gold); margin-bottom:8px;">
+        1151115 聰賢老師 · AI 歷史劇創作 × Google Flow 旗艦實戰展示系統
+      </p>
+      <p style="margin-bottom:12px;">
+        授課名師：呂聰賢 老師 · 新北市資訊科技教育名師 · 教育部數位學習精進方案推薦講師
+      </p>
+      <p style="font-size:0.84rem; opacity:0.8;">
+        本平台採純前端 SPA 無伺服器架構，支援全響應式跨載具瀏覽、Web Audio 水晶五音合成及 Web Crypto API SHA-256 安全保護。
+      </p>
+      <p style="margin-top:16px; font-size:0.8rem;">
+        © 2026 研習全體學員與教師專用教材 · 版權所有 · 翻印必究
+      </p>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       通訊燈箱與密碼門禁浮層 (Modals)
+       ========================================== -->
+  <!-- 圖片放大燈箱 -->
+  <div id="modalBackdrop" class="modal-backdrop">
+    <div class="modal-content" style="max-width:880px;">
+      <button id="modalCloseBtn" class="modal-close-btn" title="關閉燈箱">&times;</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- SHA-256 安全門禁浮層 -->
+  <div id="passwordGateModal" class="modal-backdrop">
+    <div class="modal-content">
+      <div class="gate-icon"><i class="fa-solid fa-shield-halved"></i></div>
+      <h3 style="color:var(--accent-gold); margin-bottom:6px;">教材存取安全防護</h3>
+      <p style="font-size:0.88rem; color:var(--text-muted);">
+        本站受 Web Crypto SHA-256 門禁保護，請輸入課堂通行碼以解鎖進階素材：
+      </p>
+      <input type="password" id="gateInput" class="gate-input" placeholder="請輸入通行密碼 (如: nato)">
+      <button id="gateSubmitBtn" class="btn btn-primary" style="width:100%;">
+        <i class="fa-solid fa-key"></i> 驗證並解鎖
+      </button>
+    </div>
+  </div>
+
+  <!-- Toast 浮動反饋條 -->
+  <div id="toastNotice" class="toast-notice"></div>
+
+  <!-- 外部資料庫腳本 -->
+  <script src="slides_data.js"></script>
+  <script src="characters_data.js"></script>
+  <script src="dramas_data.js"></script>
+  <!-- 主互動應用腳本 -->
+  <script src="app.js"></script>
+</body>
+</html>

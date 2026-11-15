@@ -1,0 +1,1075 @@
+/**
+ * 呂聰賢老師 AI歷史劇創作研習 全系列投影片資料庫
+ */
+window.SLIDES_DATA = [
+  {
+    "slide_num": 1,
+    "orig_num": 1,
+    "source": "01_Google Flow 工作流程.pptx",
+    "category": "Google Flow 工作流程篇",
+    "title": "Google Flow 工作流程",
+    "image": "slides_img/slide_001.png",
+    "notes": "【Google Flow 工作流程】核心要點說明：Google Flow 工作流程 | 開始神奇的 AI 創作之旅...",
+    "content": "Google Flow 工作流程 | 開始神奇的 AI 創作之旅"
+  },
+  {
+    "slide_num": 2,
+    "orig_num": 2,
+    "source": "01_Google Flow 工作流程.pptx",
+    "category": "Google Flow 工作流程篇",
+    "title": "聰賢老師-AI主題式作品集",
+    "image": "slides_img/slide_002.png",
+    "notes": "【聰賢老師-AI主題式作品集】核心要點說明：聰賢老師-AI主題式作品集 | https://www.youtube.com/playlist?list=PLU-8o76TOvQUlnIF1wdVkXhUZGrN77Kuk...",
+    "content": "聰賢老師-AI主題式作品集 | https://www.youtube.com/playlist?list=PLU-8o76TOvQUlnIF1wdVkXhUZGrN77Kuk"
+  },
+  {
+    "slide_num": 3,
+    "orig_num": 3,
+    "source": "01_Google Flow 工作流程.pptx",
+    "category": "Google Flow 工作流程篇",
+    "title": "AI 影片創作三劍客",
+    "image": "slides_img/slide_003.png",
+    "notes": "【AI 影片創作三劍客】核心要點說明：AI 影片創作三劍客 | Gemini 寫影片腳本跟生成分鏡圖片 (豆包) | google flow 將圖片轉成影片           (即夢 Seedance 2.5) | 剪映 將分鏡影片整合主題式影片     (剪映 ) | cn...",
+    "content": "AI 影片創作三劍客 | Gemini 寫影片腳本跟生成分鏡圖片 (豆包) | google flow 將圖片轉成影片           (即夢 Seedance 2.5) | 剪映 將分鏡影片整合主題式影片     (剪映 ) | cnava"
+  },
+  {
+    "slide_num": 4,
+    "orig_num": 4,
+    "source": "01_Google Flow 工作流程.pptx",
+    "category": "Google Flow 工作流程篇",
+    "title": "Google Flow 注意事項",
+    "image": "slides_img/slide_004.png",
+    "notes": "【Google Flow 注意事項】核心要點說明：Google Flow 注意事項 | 影片最長10秒 | Omni 1.1 Flash音效佳 | 說中文(外國腔)-後製處理 | 英文命令理解佳 | 名人.幼童.暴力...(不行)...",
+    "content": "Google Flow 注意事項 | 影片最長10秒 | Omni 1.1 Flash音效佳 | 說中文(外國腔)-後製處理 | 英文命令理解佳 | 名人.幼童.暴力...(不行)"
+  },
+  {
+    "slide_num": 5,
+    "orig_num": 5,
+    "source": "01_Google Flow 工作流程.pptx",
+    "category": "Google Flow 工作流程篇",
+    "title": "訂閱Google Gemini AI (650元)",
+    "image": "slides_img/slide_005.png",
+    "notes": "【訂閱Google Gemini AI (650元)】核心要點說明：訂閱Google Gemini AI (650元) | Gemini AI | Google Flow 每月1000點(1080p高品質) | NotebookLM 專業版...",
+    "content": "訂閱Google Gemini AI (650元) | Gemini AI | Google Flow 每月1000點(1080p高品質) | NotebookLM 專業版"
+  },
+  {
+    "slide_num": 6,
+    "orig_num": 6,
+    "source": "01_Google Flow 工作流程.pptx",
+    "category": "Google Flow 工作流程篇",
+    "title": "多個 Google 帳號",
+    "image": "slides_img/slide_006.png",
+    "notes": "【多個 Google 帳號】核心要點說明：多個 Google 帳號 | 免費版每天 50 點 | 5個帳號-250點 | 製作15段分鏡影片...",
+    "content": "多個 Google 帳號 | 免費版每天 50 點 | 5個帳號-250點 | 製作15段分鏡影片"
+  },
+  {
+    "slide_num": 7,
+    "orig_num": 7,
+    "source": "01_Google Flow 工作流程.pptx",
+    "category": "Google Flow 工作流程篇",
+    "title": "建立專案",
+    "image": "slides_img/slide_007.png",
+    "notes": "【建立專案】核心要點說明：建立專案 | 修改專案名稱 | 上傳6張分鏡圖...",
+    "content": "建立專案 | 修改專案名稱 | 上傳6張分鏡圖"
+  },
+  {
+    "slide_num": 8,
+    "orig_num": 8,
+    "source": "01_Google Flow 工作流程.pptx",
+    "category": "Google Flow 工作流程篇",
+    "title": "Google Flow 工作流程篇 - 第 8 頁",
+    "image": "slides_img/slide_008.png",
+    "notes": "【Google Flow 工作流程篇 - 第 8 頁】核心要點說明：Google Flow 工作流程篇 - 第 8 頁...",
+    "content": "Google Flow 工作流程篇 - 第 8 頁"
+  },
+  {
+    "slide_num": 9,
+    "orig_num": 9,
+    "source": "01_Google Flow 工作流程.pptx",
+    "category": "Google Flow 工作流程篇",
+    "title": "影片設定",
+    "image": "slides_img/slide_009.png",
+    "notes": "【影片設定】核心要點說明：影片設定 | 影片規格 | Omni Flash…...",
+    "content": "影片設定 | 影片規格 | Omni Flash…"
+  },
+  {
+    "slide_num": 10,
+    "orig_num": 10,
+    "source": "01_Google Flow 工作流程.pptx",
+    "category": "Google Flow 工作流程篇",
+    "title": "影片生成設定",
+    "image": "slides_img/slide_010.png",
+    "notes": "【影片生成設定】核心要點說明：影片生成設定 | 視訊.素材. 16:9 | Omni Flash | 10 秒鐘 | 1個影片 | 消耗 15 點...",
+    "content": "影片生成設定 | 視訊.素材. 16:9 | Omni Flash | 10 秒鐘 | 1個影片 | 消耗 15 點"
+  },
+  {
+    "slide_num": 11,
+    "orig_num": 11,
+    "source": "01_Google Flow 工作流程.pptx",
+    "category": "Google Flow 工作流程篇",
+    "title": "Google Flow 工作流程篇 - 第 11 頁",
+    "image": "slides_img/slide_011.png",
+    "notes": "【Google Flow 工作流程篇 - 第 11 頁】核心要點說明：Google Flow 工作流程篇 - 第 11 頁...",
+    "content": "Google Flow 工作流程篇 - 第 11 頁"
+  },
+  {
+    "slide_num": 12,
+    "orig_num": 12,
+    "source": "01_Google Flow 工作流程.pptx",
+    "category": "Google Flow 工作流程篇",
+    "title": "生成影片",
+    "image": "slides_img/slide_012.png",
+    "notes": "【生成影片】核心要點說明：生成影片 | 圖片加入提示詞 | 貼上影片提示詞-送出...",
+    "content": "生成影片 | 圖片加入提示詞 | 貼上影片提示詞-送出"
+  },
+  {
+    "slide_num": 13,
+    "orig_num": 13,
+    "source": "01_Google Flow 工作流程.pptx",
+    "category": "Google Flow 工作流程篇",
+    "title": "Google Flow 工作流程篇 - 第 13 頁",
+    "image": "slides_img/slide_013.png",
+    "notes": "【Google Flow 工作流程篇 - 第 13 頁】核心要點說明：Google Flow 工作流程篇 - 第 13 頁...",
+    "content": "Google Flow 工作流程篇 - 第 13 頁"
+  },
+  {
+    "slide_num": 14,
+    "orig_num": 14,
+    "source": "01_Google Flow 工作流程.pptx",
+    "category": "Google Flow 工作流程篇",
+    "title": "Google Flow 工作流程篇 - 第 14 頁",
+    "image": "slides_img/slide_014.png",
+    "notes": "【Google Flow 工作流程篇 - 第 14 頁】核心要點說明：Google Flow 工作流程篇 - 第 14 頁...",
+    "content": "Google Flow 工作流程篇 - 第 14 頁"
+  },
+  {
+    "slide_num": 15,
+    "orig_num": 15,
+    "source": "01_Google Flow 工作流程.pptx",
+    "category": "Google Flow 工作流程篇",
+    "title": "Google Flow 工作流程篇 - 第 15 頁",
+    "image": "slides_img/slide_015.png",
+    "notes": "【Google Flow 工作流程篇 - 第 15 頁】核心要點說明：Google Flow 工作流程篇 - 第 15 頁...",
+    "content": "Google Flow 工作流程篇 - 第 15 頁"
+  },
+  {
+    "slide_num": 16,
+    "orig_num": 16,
+    "source": "01_Google Flow 工作流程.pptx",
+    "category": "Google Flow 工作流程篇",
+    "title": "Google Flow 工作流程篇 - 第 16 頁",
+    "image": "slides_img/slide_016.png",
+    "notes": "【Google Flow 工作流程篇 - 第 16 頁】核心要點說明：Google Flow 工作流程篇 - 第 16 頁...",
+    "content": "Google Flow 工作流程篇 - 第 16 頁"
+  },
+  {
+    "slide_num": 17,
+    "orig_num": 17,
+    "source": "01_Google Flow 工作流程.pptx",
+    "category": "Google Flow 工作流程篇",
+    "title": "Google Flow 工作流程篇 - 第 17 頁",
+    "image": "slides_img/slide_017.png",
+    "notes": "【Google Flow 工作流程篇 - 第 17 頁】核心要點說明：Google Flow 工作流程篇 - 第 17 頁...",
+    "content": "Google Flow 工作流程篇 - 第 17 頁"
+  },
+  {
+    "slide_num": 18,
+    "orig_num": 18,
+    "source": "01_Google Flow 工作流程.pptx",
+    "category": "Google Flow 工作流程篇",
+    "title": "Google Flow 工作流程篇 - 第 18 頁",
+    "image": "slides_img/slide_018.png",
+    "notes": "【Google Flow 工作流程篇 - 第 18 頁】核心要點說明：Google Flow 工作流程篇 - 第 18 頁...",
+    "content": "Google Flow 工作流程篇 - 第 18 頁"
+  },
+  {
+    "slide_num": 19,
+    "orig_num": 19,
+    "source": "01_Google Flow 工作流程.pptx",
+    "category": "Google Flow 工作流程篇",
+    "title": "更改檔名",
+    "image": "slides_img/slide_019.png",
+    "notes": "【更改檔名】核心要點說明：更改檔名 | 三個點點 | 重新命名...",
+    "content": "更改檔名 | 三個點點 | 重新命名"
+  },
+  {
+    "slide_num": 20,
+    "orig_num": 20,
+    "source": "01_Google Flow 工作流程.pptx",
+    "category": "Google Flow 工作流程篇",
+    "title": "Google Flow 工作流程篇 - 第 20 頁",
+    "image": "slides_img/slide_020.png",
+    "notes": "【Google Flow 工作流程篇 - 第 20 頁】核心要點說明：Google Flow 工作流程篇 - 第 20 頁...",
+    "content": "Google Flow 工作流程篇 - 第 20 頁"
+  },
+  {
+    "slide_num": 21,
+    "orig_num": 21,
+    "source": "01_Google Flow 工作流程.pptx",
+    "category": "Google Flow 工作流程篇",
+    "title": "Google Flow 工作流程篇 - 第 21 頁",
+    "image": "slides_img/slide_021.png",
+    "notes": "【Google Flow 工作流程篇 - 第 21 頁】核心要點說明：Google Flow 工作流程篇 - 第 21 頁...",
+    "content": "Google Flow 工作流程篇 - 第 21 頁"
+  },
+  {
+    "slide_num": 22,
+    "orig_num": 22,
+    "source": "01_Google Flow 工作流程.pptx",
+    "category": "Google Flow 工作流程篇",
+    "title": "下載影片",
+    "image": "slides_img/slide_022.png",
+    "notes": "【下載影片】核心要點說明：下載影片 | 三個點點 | 下載  720p...",
+    "content": "下載影片 | 三個點點 | 下載  720p"
+  },
+  {
+    "slide_num": 23,
+    "orig_num": 23,
+    "source": "01_Google Flow 工作流程.pptx",
+    "category": "Google Flow 工作流程篇",
+    "title": "Google Flow 工作流程篇 - 第 23 頁",
+    "image": "slides_img/slide_023.png",
+    "notes": "【Google Flow 工作流程篇 - 第 23 頁】核心要點說明：Google Flow 工作流程篇 - 第 23 頁...",
+    "content": "Google Flow 工作流程篇 - 第 23 頁"
+  },
+  {
+    "slide_num": 24,
+    "orig_num": 24,
+    "source": "01_Google Flow 工作流程.pptx",
+    "category": "Google Flow 工作流程篇",
+    "title": "角色元件",
+    "image": "slides_img/slide_024.png",
+    "notes": "【角色元件】核心要點說明：角色元件 | 影片角色一致性控制...",
+    "content": "角色元件 | 影片角色一致性控制"
+  },
+  {
+    "slide_num": 25,
+    "orig_num": 25,
+    "source": "01_Google Flow 工作流程.pptx",
+    "category": "Google Flow 工作流程篇",
+    "title": "Flow 影片整理文案(英文命令較佳)",
+    "image": "slides_img/slide_025.png",
+    "notes": "【Flow 影片整理文案(英文命令較佳)】核心要點說明：Flow 影片整理文案(英文命令較佳) | 主角的人物，臉孔必須完全百分之百相同,服飾以指定服飾做改變 | The main character's face must be exactly the same, and the clothi...",
+    "content": "Flow 影片整理文案(英文命令較佳) | 主角的人物，臉孔必須完全百分之百相同,服飾以指定服飾做改變 | The main character's face must be exactly the same, and the clothing must be modified according to the specified clothing."
+  },
+  {
+    "slide_num": 26,
+    "orig_num": 26,
+    "source": "01_Google Flow 工作流程.pptx",
+    "category": "Google Flow 工作流程篇",
+    "title": "使用中文語音旁白提示詞",
+    "image": "slides_img/slide_026.png",
+    "notes": "【使用中文語音旁白提示詞】核心要點說明：使用中文語音旁白提示詞 | speaks fluent Mandarin Chinese and says: | \"歡迎來到劍湖山世界！這裡有超震撼的彩虹摩天輪！\"...",
+    "content": "使用中文語音旁白提示詞 | speaks fluent Mandarin Chinese and says: | \"歡迎來到劍湖山世界！這裡有超震撼的彩虹摩天輪！\""
+  },
+  {
+    "slide_num": 27,
+    "orig_num": 27,
+    "source": "01_Google Flow 工作流程.pptx",
+    "category": "Google Flow 工作流程篇",
+    "title": "虛擬分身",
+    "image": "slides_img/slide_027.png",
+    "notes": "【虛擬分身】核心要點說明：虛擬分身 | 景點、語音...",
+    "content": "虛擬分身 | 景點、語音"
+  },
+  {
+    "slide_num": 28,
+    "orig_num": 28,
+    "source": "01_Google Flow 工作流程.pptx",
+    "category": "Google Flow 工作流程篇",
+    "title": "Google Flow 工作流程篇 - 第 28 頁",
+    "image": "slides_img/slide_028.png",
+    "notes": "【Google Flow 工作流程篇 - 第 28 頁】核心要點說明：Google Flow 工作流程篇 - 第 28 頁...",
+    "content": "Google Flow 工作流程篇 - 第 28 頁"
+  },
+  {
+    "slide_num": 29,
+    "orig_num": 29,
+    "source": "01_Google Flow 工作流程.pptx",
+    "category": "Google Flow 工作流程篇",
+    "title": "AI影片生成",
+    "image": "slides_img/slide_029.png",
+    "notes": "【AI影片生成】核心要點說明：AI影片生成 | 注意事項...",
+    "content": "AI影片生成 | 注意事項"
+  },
+  {
+    "slide_num": 30,
+    "orig_num": 30,
+    "source": "01_Google Flow 工作流程.pptx",
+    "category": "Google Flow 工作流程篇",
+    "title": "AI影片生成注意事項",
+    "image": "slides_img/slide_030.png",
+    "notes": "【AI影片生成注意事項】核心要點說明：AI影片生成注意事項 | 生成影片時請使用英文提示詞,中文容易出問題。 | 單段影片最多10秒,所以勿給太長的劇情,會被截斷。 | 影片若要搭配旁白,最多8秒鐘語音旁白。 | 語音旁白(提示詞為fluent Mandarin Chinese...",
+    "content": "AI影片生成注意事項 | 生成影片時請使用英文提示詞,中文容易出問題。 | 單段影片最多10秒,所以勿給太長的劇情,會被截斷。 | 影片若要搭配旁白,最多8秒鐘語音旁白。 | 語音旁白(提示詞為fluent Mandarin Chinese and says)。 | 畫面勿出現中文,繁體中文錯誤率極高。英文較沒問題。"
+  },
+  {
+    "slide_num": 31,
+    "orig_num": 31,
+    "source": "01_Google Flow 工作流程.pptx",
+    "category": "Google Flow 工作流程篇",
+    "title": "剪映影片後製",
+    "image": "slides_img/slide_031.png",
+    "notes": "【剪映影片後製】核心要點說明：剪映影片後製...",
+    "content": "剪映影片後製"
+  },
+  {
+    "slide_num": 32,
+    "orig_num": 32,
+    "source": "01_Google Flow 工作流程.pptx",
+    "category": "Google Flow 工作流程篇",
+    "title": "剪映影片後製",
+    "image": "slides_img/slide_032.png",
+    "notes": "【剪映影片後製】核心要點說明：剪映影片後製 | 1. 匯入影片 | 2. 拖移到時間軸 | 3. 文字轉語音 | 4. 語音轉字幕 | 5. 字幕描邊效果 | 6. 加入標題 | 7. 專案名稱 | 8. 輸出 MP4 影片...",
+    "content": "剪映影片後製 | 1. 匯入影片 | 2. 拖移到時間軸 | 3. 文字轉語音 | 4. 語音轉字幕 | 5. 字幕描邊效果 | 6. 加入標題 | 7. 專案名稱 | 8. 輸出 MP4 影片"
+  },
+  {
+    "slide_num": 33,
+    "orig_num": 1,
+    "source": "02_Google Flow 安裝.pptx",
+    "category": "Google Flow 安裝設定篇",
+    "title": "Google Flow 安裝設定篇 - 第 1 頁",
+    "image": "slides_img/slide_033.png",
+    "notes": "【Google Flow 安裝設定篇 - 第 1 頁】核心要點說明：Google Flow 安裝設定篇 - 第 1 頁...",
+    "content": "Google Flow 安裝設定篇 - 第 1 頁"
+  },
+  {
+    "slide_num": 34,
+    "orig_num": 2,
+    "source": "02_Google Flow 安裝.pptx",
+    "category": "Google Flow 安裝設定篇",
+    "title": "1.開啟Google搜尋",
+    "image": "slides_img/slide_034.png",
+    "notes": "【1.開啟Google搜尋】核心要點說明：1.開啟Google搜尋 | 2.輸入 google flow | 3.開啟 Google Labs | 聰賢老師...",
+    "content": "1.開啟Google搜尋 | 2.輸入 google flow | 3.開啟 Google Labs | 聰賢老師"
+  },
+  {
+    "slide_num": 35,
+    "orig_num": 3,
+    "source": "02_Google Flow 安裝.pptx",
+    "category": "Google Flow 安裝設定篇",
+    "title": "1.點選下一步",
+    "image": "slides_img/slide_035.png",
+    "notes": "【1.點選下一步】核心要點說明：1.點選下一步 | 聰賢老師...",
+    "content": "1.點選下一步 | 聰賢老師"
+  },
+  {
+    "slide_num": 36,
+    "orig_num": 4,
+    "source": "02_Google Flow 安裝.pptx",
+    "category": "Google Flow 安裝設定篇",
+    "title": "1.捲軸往下移動",
+    "image": "slides_img/slide_036.png",
+    "notes": "【1.捲軸往下移動】核心要點說明：1.捲軸往下移動 | 2.才能點選“繼續” | 聰賢老師...",
+    "content": "1.捲軸往下移動 | 2.才能點選“繼續” | 聰賢老師"
+  },
+  {
+    "slide_num": 37,
+    "orig_num": 5,
+    "source": "02_Google Flow 安裝.pptx",
+    "category": "Google Flow 安裝設定篇",
+    "title": "1.點選“新建項目”",
+    "image": "slides_img/slide_037.png",
+    "notes": "【1.點選“新建項目”】核心要點說明：1.點選“新建項目” | 表示新專案 | 聰賢老師...",
+    "content": "1.點選“新建項目” | 表示新專案 | 聰賢老師"
+  },
+  {
+    "slide_num": 38,
+    "orig_num": 6,
+    "source": "02_Google Flow 安裝.pptx",
+    "category": "Google Flow 安裝設定篇",
+    "title": "新功能介紹",
+    "image": "slides_img/slide_038.png",
+    "notes": "【新功能介紹】核心要點說明：新功能介紹 | 左側黑色區點一下 | 就離開說明頁了 | 聰賢老師...",
+    "content": "新功能介紹 | 左側黑色區點一下 | 就離開說明頁了 | 聰賢老師"
+  },
+  {
+    "slide_num": 39,
+    "orig_num": 7,
+    "source": "02_Google Flow 安裝.pptx",
+    "category": "Google Flow 安裝設定篇",
+    "title": "右上角",
+    "image": "slides_img/slide_039.png",
+    "notes": "【右上角】核心要點說明：右上角 | 點選 x 關閉對話模式 | 聰賢老師...",
+    "content": "右上角 | 點選 x 關閉對話模式 | 聰賢老師"
+  },
+  {
+    "slide_num": 40,
+    "orig_num": 8,
+    "source": "02_Google Flow 安裝.pptx",
+    "category": "Google Flow 安裝設定篇",
+    "title": "點選”智能體”關閉",
+    "image": "slides_img/slide_040.png",
+    "notes": "【點選”智能體”關閉】核心要點說明：點選”智能體”關閉 | 聰賢老師...",
+    "content": "點選”智能體”關閉 | 聰賢老師"
+  },
+  {
+    "slide_num": 41,
+    "orig_num": 9,
+    "source": "02_Google Flow 安裝.pptx",
+    "category": "Google Flow 安裝設定篇",
+    "title": "生圖:Nano Banana2",
+    "image": "slides_img/slide_041.png",
+    "notes": "【生圖:Nano Banana2】核心要點說明：生圖:Nano Banana2 | 一次生成4張圖片 0點數 | 聰賢老師...",
+    "content": "生圖:Nano Banana2 | 一次生成4張圖片 0點數 | 聰賢老師"
+  },
+  {
+    "slide_num": 42,
+    "orig_num": 10,
+    "source": "02_Google Flow 安裝.pptx",
+    "category": "Google Flow 安裝設定篇",
+    "title": "視頻:Veo 3.1",
+    "image": "slides_img/slide_042.png",
+    "notes": "【視頻:Veo 3.1】核心要點說明：視頻:Veo 3.1 | 一次生成1個影片 10點數 | 聰賢老師...",
+    "content": "視頻:Veo 3.1 | 一次生成1個影片 10點數 | 聰賢老師"
+  },
+  {
+    "slide_num": 43,
+    "orig_num": 1,
+    "source": "03_創建虛擬形象個人分身.pptx",
+    "category": "創建虛擬形象個人分身篇",
+    "title": "創建虛擬形象個人分身",
+    "image": "slides_img/slide_043.png",
+    "notes": "【創建虛擬形象個人分身】核心要點說明：創建虛擬形象個人分身 | 開始神奇的 AI 創作之旅...",
+    "content": "創建虛擬形象個人分身 | 開始神奇的 AI 創作之旅"
+  },
+  {
+    "slide_num": 44,
+    "orig_num": 2,
+    "source": "03_創建虛擬形象個人分身.pptx",
+    "category": "創建虛擬形象個人分身篇",
+    "title": "Google Flow",
+    "image": "slides_img/slide_044.png",
+    "notes": "【Google Flow】核心要點說明：Google Flow | 創建虛擬形象...",
+    "content": "Google Flow | 創建虛擬形象"
+  },
+  {
+    "slide_num": 45,
+    "orig_num": 3,
+    "source": "03_創建虛擬形象個人分身.pptx",
+    "category": "創建虛擬形象個人分身篇",
+    "title": "個人數位分身",
+    "image": "slides_img/slide_045.png",
+    "notes": "【個人數位分身】核心要點說明：個人數位分身 | 1. Chrome 瀏覽器更新到最新版 | 2. 關閉擴充功能 | 3. 不能使用無痕視窗 | 4. 手機的Chrome 更新...",
+    "content": "個人數位分身 | 1. Chrome 瀏覽器更新到最新版 | 2. 關閉擴充功能 | 3. 不能使用無痕視窗 | 4. 手機的Chrome 更新"
+  },
+  {
+    "slide_num": 46,
+    "orig_num": 4,
+    "source": "03_創建虛擬形象個人分身.pptx",
+    "category": "創建虛擬形象個人分身篇",
+    "title": "創建虛擬形象個人分身篇 - 第 4 頁",
+    "image": "slides_img/slide_046.png",
+    "notes": "【創建虛擬形象個人分身篇 - 第 4 頁】核心要點說明：創建虛擬形象個人分身篇 - 第 4 頁...",
+    "content": "創建虛擬形象個人分身篇 - 第 4 頁"
+  },
+  {
+    "slide_num": 47,
+    "orig_num": 5,
+    "source": "03_創建虛擬形象個人分身.pptx",
+    "category": "創建虛擬形象個人分身篇",
+    "title": "創建虛擬形象個人分身篇 - 第 5 頁",
+    "image": "slides_img/slide_047.png",
+    "notes": "【創建虛擬形象個人分身篇 - 第 5 頁】核心要點說明：創建虛擬形象個人分身篇 - 第 5 頁...",
+    "content": "創建虛擬形象個人分身篇 - 第 5 頁"
+  },
+  {
+    "slide_num": 48,
+    "orig_num": 6,
+    "source": "03_創建虛擬形象個人分身.pptx",
+    "category": "創建虛擬形象個人分身篇",
+    "title": "創建虛擬形象個人分身篇 - 第 6 頁",
+    "image": "slides_img/slide_048.png",
+    "notes": "【創建虛擬形象個人分身篇 - 第 6 頁】核心要點說明：創建虛擬形象個人分身篇 - 第 6 頁...",
+    "content": "創建虛擬形象個人分身篇 - 第 6 頁"
+  },
+  {
+    "slide_num": 49,
+    "orig_num": 7,
+    "source": "03_創建虛擬形象個人分身.pptx",
+    "category": "創建虛擬形象個人分身篇",
+    "title": "創建虛擬形象個人分身篇 - 第 7 頁",
+    "image": "slides_img/slide_049.png",
+    "notes": "【創建虛擬形象個人分身篇 - 第 7 頁】核心要點說明：創建虛擬形象個人分身篇 - 第 7 頁...",
+    "content": "創建虛擬形象個人分身篇 - 第 7 頁"
+  },
+  {
+    "slide_num": 50,
+    "orig_num": 8,
+    "source": "03_創建虛擬形象個人分身.pptx",
+    "category": "創建虛擬形象個人分身篇",
+    "title": "創建虛擬形象個人分身篇 - 第 8 頁",
+    "image": "slides_img/slide_050.png",
+    "notes": "【創建虛擬形象個人分身篇 - 第 8 頁】核心要點說明：創建虛擬形象個人分身篇 - 第 8 頁...",
+    "content": "創建虛擬形象個人分身篇 - 第 8 頁"
+  },
+  {
+    "slide_num": 51,
+    "orig_num": 9,
+    "source": "03_創建虛擬形象個人分身.pptx",
+    "category": "創建虛擬形象個人分身篇",
+    "title": "創建虛擬形象個人分身篇 - 第 9 頁",
+    "image": "slides_img/slide_051.png",
+    "notes": "【創建虛擬形象個人分身篇 - 第 9 頁】核心要點說明：創建虛擬形象個人分身篇 - 第 9 頁...",
+    "content": "創建虛擬形象個人分身篇 - 第 9 頁"
+  },
+  {
+    "slide_num": 52,
+    "orig_num": 10,
+    "source": "03_創建虛擬形象個人分身.pptx",
+    "category": "創建虛擬形象個人分身篇",
+    "title": "創建虛擬形象個人分身篇 - 第 10 頁",
+    "image": "slides_img/slide_052.png",
+    "notes": "【創建虛擬形象個人分身篇 - 第 10 頁】核心要點說明：創建虛擬形象個人分身篇 - 第 10 頁...",
+    "content": "創建虛擬形象個人分身篇 - 第 10 頁"
+  },
+  {
+    "slide_num": 53,
+    "orig_num": 11,
+    "source": "03_創建虛擬形象個人分身.pptx",
+    "category": "創建虛擬形象個人分身篇",
+    "title": "創建虛擬形象個人分身篇 - 第 11 頁",
+    "image": "slides_img/slide_053.png",
+    "notes": "【創建虛擬形象個人分身篇 - 第 11 頁】核心要點說明：創建虛擬形象個人分身篇 - 第 11 頁...",
+    "content": "創建虛擬形象個人分身篇 - 第 11 頁"
+  },
+  {
+    "slide_num": 54,
+    "orig_num": 12,
+    "source": "03_創建虛擬形象個人分身.pptx",
+    "category": "創建虛擬形象個人分身篇",
+    "title": "手機操作 - 問什麼都要同意？",
+    "image": "slides_img/slide_054.png",
+    "notes": "【手機操作 - 問什麼都要同意？】核心要點說明：手機操作 - 問什麼都要同意？...",
+    "content": "手機操作 - 問什麼都要同意？"
+  },
+  {
+    "slide_num": 55,
+    "orig_num": 13,
+    "source": "03_創建虛擬形象個人分身.pptx",
+    "category": "創建虛擬形象個人分身篇",
+    "title": "手機操作 -1.使用英文唸數字  2.跟隨畫面指引轉頭像",
+    "image": "slides_img/slide_055.png",
+    "notes": "【手機操作 -1.使用英文唸數字  2.跟隨畫面指引轉頭像】核心要點說明：手機操作 -1.使用英文唸數字  2.跟隨畫面指引轉頭像...",
+    "content": "手機操作 -1.使用英文唸數字  2.跟隨畫面指引轉頭像"
+  },
+  {
+    "slide_num": 56,
+    "orig_num": 14,
+    "source": "03_創建虛擬形象個人分身.pptx",
+    "category": "創建虛擬形象個人分身篇",
+    "title": "手機操作 -1.上傳你的虛擬分身  2.電腦網頁版開啟了",
+    "image": "slides_img/slide_056.png",
+    "notes": "【手機操作 -1.上傳你的虛擬分身  2.電腦網頁版開啟了】核心要點說明：手機操作 -1.上傳你的虛擬分身  2.電腦網頁版開啟了...",
+    "content": "手機操作 -1.上傳你的虛擬分身  2.電腦網頁版開啟了"
+  },
+  {
+    "slide_num": 57,
+    "orig_num": 15,
+    "source": "03_創建虛擬形象個人分身.pptx",
+    "category": "創建虛擬形象個人分身篇",
+    "title": "創建虛擬形象個人分身篇 - 第 15 頁",
+    "image": "slides_img/slide_057.png",
+    "notes": "【創建虛擬形象個人分身篇 - 第 15 頁】核心要點說明：創建虛擬形象個人分身篇 - 第 15 頁...",
+    "content": "創建虛擬形象個人分身篇 - 第 15 頁"
+  },
+  {
+    "slide_num": 58,
+    "orig_num": 16,
+    "source": "03_創建虛擬形象個人分身.pptx",
+    "category": "創建虛擬形象個人分身篇",
+    "title": "創建虛擬形象個人分身篇 - 第 16 頁",
+    "image": "slides_img/slide_058.png",
+    "notes": "【創建虛擬形象個人分身篇 - 第 16 頁】核心要點說明：創建虛擬形象個人分身篇 - 第 16 頁...",
+    "content": "創建虛擬形象個人分身篇 - 第 16 頁"
+  },
+  {
+    "slide_num": 59,
+    "orig_num": 17,
+    "source": "03_創建虛擬形象個人分身.pptx",
+    "category": "創建虛擬形象個人分身篇",
+    "title": "如何呼叫個人的虛擬分身？(2點)",
+    "image": "slides_img/slide_059.png",
+    "notes": "【如何呼叫個人的虛擬分身？(2點)】核心要點說明：如何呼叫個人的虛擬分身？(2點) | 確定在英文輸入法模式 | @ me...",
+    "content": "如何呼叫個人的虛擬分身？(2點) | 確定在英文輸入法模式 | @ me"
+  },
+  {
+    "slide_num": 60,
+    "orig_num": 18,
+    "source": "03_創建虛擬形象個人分身.pptx",
+    "category": "創建虛擬形象個人分身篇",
+    "title": "創建虛擬形象個人分身篇 - 第 18 頁",
+    "image": "slides_img/slide_060.png",
+    "notes": "【創建虛擬形象個人分身篇 - 第 18 頁】核心要點說明：創建虛擬形象個人分身篇 - 第 18 頁...",
+    "content": "創建虛擬形象個人分身篇 - 第 18 頁"
+  },
+  {
+    "slide_num": 61,
+    "orig_num": 19,
+    "source": "03_創建虛擬形象個人分身.pptx",
+    "category": "創建虛擬形象個人分身篇",
+    "title": "創建虛擬形象個人分身篇 - 第 19 頁",
+    "image": "slides_img/slide_061.png",
+    "notes": "【創建虛擬形象個人分身篇 - 第 19 頁】核心要點說明：創建虛擬形象個人分身篇 - 第 19 頁...",
+    "content": "創建虛擬形象個人分身篇 - 第 19 頁"
+  },
+  {
+    "slide_num": 62,
+    "orig_num": 1,
+    "source": "04_主角固定人物和聲音.pptx",
+    "category": "主角固定人物與聲音篇",
+    "title": "創建主角",
+    "image": "slides_img/slide_062.png",
+    "notes": "【創建主角】核心要點說明：創建主角 | 固定人物和聲音 | 開始神奇的 AI 創作之旅...",
+    "content": "創建主角 | 固定人物和聲音 | 開始神奇的 AI 創作之旅"
+  },
+  {
+    "slide_num": 63,
+    "orig_num": 2,
+    "source": "04_主角固定人物和聲音.pptx",
+    "category": "主角固定人物與聲音篇",
+    "title": "上傳素材",
+    "image": "slides_img/slide_063.png",
+    "notes": "【上傳素材】核心要點說明：上傳素材 | 人物 & 場景圖片...",
+    "content": "上傳素材 | 人物 & 場景圖片"
+  },
+  {
+    "slide_num": 64,
+    "orig_num": 3,
+    "source": "04_主角固定人物和聲音.pptx",
+    "category": "主角固定人物與聲音篇",
+    "title": "主角固定人物與聲音篇 - 第 3 頁",
+    "image": "slides_img/slide_064.png",
+    "notes": "【主角固定人物與聲音篇 - 第 3 頁】核心要點說明：主角固定人物與聲音篇 - 第 3 頁...",
+    "content": "主角固定人物與聲音篇 - 第 3 頁"
+  },
+  {
+    "slide_num": 65,
+    "orig_num": 4,
+    "source": "04_主角固定人物和聲音.pptx",
+    "category": "主角固定人物與聲音篇",
+    "title": "主角固定人物與聲音篇 - 第 4 頁",
+    "image": "slides_img/slide_065.png",
+    "notes": "【主角固定人物與聲音篇 - 第 4 頁】核心要點說明：主角固定人物與聲音篇 - 第 4 頁...",
+    "content": "主角固定人物與聲音篇 - 第 4 頁"
+  },
+  {
+    "slide_num": 66,
+    "orig_num": 5,
+    "source": "04_主角固定人物和聲音.pptx",
+    "category": "主角固定人物與聲音篇",
+    "title": "角色建立",
+    "image": "slides_img/slide_066.png",
+    "notes": "【角色建立】核心要點說明：角色建立 | 人物一致性 & 相同聲音...",
+    "content": "角色建立 | 人物一致性 & 相同聲音"
+  },
+  {
+    "slide_num": 67,
+    "orig_num": 6,
+    "source": "04_主角固定人物和聲音.pptx",
+    "category": "主角固定人物與聲音篇",
+    "title": "主角固定人物與聲音篇 - 第 6 頁",
+    "image": "slides_img/slide_067.png",
+    "notes": "【主角固定人物與聲音篇 - 第 6 頁】核心要點說明：主角固定人物與聲音篇 - 第 6 頁...",
+    "content": "主角固定人物與聲音篇 - 第 6 頁"
+  },
+  {
+    "slide_num": 68,
+    "orig_num": 7,
+    "source": "04_主角固定人物和聲音.pptx",
+    "category": "主角固定人物與聲音篇",
+    "title": "主角固定人物與聲音篇 - 第 7 頁",
+    "image": "slides_img/slide_068.png",
+    "notes": "【主角固定人物與聲音篇 - 第 7 頁】核心要點說明：主角固定人物與聲音篇 - 第 7 頁...",
+    "content": "主角固定人物與聲音篇 - 第 7 頁"
+  },
+  {
+    "slide_num": 69,
+    "orig_num": 8,
+    "source": "04_主角固定人物和聲音.pptx",
+    "category": "主角固定人物與聲音篇",
+    "title": "主角固定人物與聲音篇 - 第 8 頁",
+    "image": "slides_img/slide_069.png",
+    "notes": "【主角固定人物與聲音篇 - 第 8 頁】核心要點說明：主角固定人物與聲音篇 - 第 8 頁...",
+    "content": "主角固定人物與聲音篇 - 第 8 頁"
+  },
+  {
+    "slide_num": 70,
+    "orig_num": 9,
+    "source": "04_主角固定人物和聲音.pptx",
+    "category": "主角固定人物與聲音篇",
+    "title": "主角固定人物與聲音篇 - 第 9 頁",
+    "image": "slides_img/slide_070.png",
+    "notes": "【主角固定人物與聲音篇 - 第 9 頁】核心要點說明：主角固定人物與聲音篇 - 第 9 頁...",
+    "content": "主角固定人物與聲音篇 - 第 9 頁"
+  },
+  {
+    "slide_num": 71,
+    "orig_num": 10,
+    "source": "04_主角固定人物和聲音.pptx",
+    "category": "主角固定人物與聲音篇",
+    "title": "設定固定聲音 Male(男聲)  Female(女生)",
+    "image": "slides_img/slide_071.png",
+    "notes": "【設定固定聲音 Male(男聲)  Female(女生)】核心要點說明：設定固定聲音 Male(男聲)  Female(女生) | 1.選定男女聲 | 2.對話示例:我是小明 | 3.聲音效果:勇敢正直 | 4.預覽試聽 | 5.保存新語音 | 6.指定給角色...",
+    "content": "設定固定聲音 Male(男聲)  Female(女生) | 1.選定男女聲 | 2.對話示例:我是小明 | 3.聲音效果:勇敢正直 | 4.預覽試聽 | 5.保存新語音 | 6.指定給角色"
+  },
+  {
+    "slide_num": 72,
+    "orig_num": 11,
+    "source": "04_主角固定人物和聲音.pptx",
+    "category": "主角固定人物與聲音篇",
+    "title": "指定給角色",
+    "image": "slides_img/slide_072.png",
+    "notes": "【指定給角色】核心要點說明：指定給角色...",
+    "content": "指定給角色"
+  },
+  {
+    "slide_num": 73,
+    "orig_num": 12,
+    "source": "04_主角固定人物和聲音.pptx",
+    "category": "主角固定人物與聲音篇",
+    "title": "主角固定人物與聲音篇 - 第 12 頁",
+    "image": "slides_img/slide_073.png",
+    "notes": "【主角固定人物與聲音篇 - 第 12 頁】核心要點說明：主角固定人物與聲音篇 - 第 12 頁...",
+    "content": "主角固定人物與聲音篇 - 第 12 頁"
+  },
+  {
+    "slide_num": 74,
+    "orig_num": 13,
+    "source": "04_主角固定人物和聲音.pptx",
+    "category": "主角固定人物與聲音篇",
+    "title": "主角固定人物與聲音篇 - 第 13 頁",
+    "image": "slides_img/slide_074.png",
+    "notes": "【主角固定人物與聲音篇 - 第 13 頁】核心要點說明：主角固定人物與聲音篇 - 第 13 頁...",
+    "content": "主角固定人物與聲音篇 - 第 13 頁"
+  },
+  {
+    "slide_num": 75,
+    "orig_num": 1,
+    "source": "07_剪映 AI 影片後製.pdf",
+    "category": "剪映 AI 影片後製篇",
+    "title": "剪 映",
+    "image": "slides_img/slide_075.png",
+    "notes": "【剪映 AI 影片後製 - 第 1 頁】剪 映 | A I 語 音 旁 白 | 聰 賢 ⽼ 師 的 ⼯ 作 室 | 聰 賢 ⽼ 師 | 電腦版",
+    "content": "剪 映 | A I 語 音 旁 白 | 聰 賢 ⽼ 師 的 ⼯ 作 室 | 聰 賢 ⽼ 師 | 電腦版"
+  },
+  {
+    "slide_num": 76,
+    "orig_num": 2,
+    "source": "07_剪映 AI 影片後製.pdf",
+    "category": "剪映 AI 影片後製篇",
+    "title": "剪映後製⼯作",
+    "image": "slides_img/slide_076.png",
+    "notes": "【剪映 AI 影片後製 - 第 2 頁】剪映後製⼯作 | 剪 映 - 影 片 語 音 旁 白 | 1 . G e m i n i  寫 文 案 | 2 . F l o w  生 成 影 片 | 3 . 剪 映  影 片 後 製 作 | 1 . 導 入 分 鏡 影 片 | 2 . 分 鏡 語 音 旁 白 | 3 . A I 自 動 上 字 ",
+    "content": "剪映後製⼯作 | 剪 映 - 影 片 語 音 旁 白 | 1 . G e m i n i  寫 文 案 | 2 . F l o w  生 成 影 片 | 3 . 剪 映  影 片 後 製 作 | 1 . 導 入 分 鏡 影 片 | 2 . 分 鏡 語 音 旁 白 | 3 . A I 自 動 上 字 幕 | 4 . 標 題 文 字 | 5 . 背 景 音 樂 | 6 . 導 出 M P 4 影 片"
+  },
+  {
+    "slide_num": 77,
+    "orig_num": 3,
+    "source": "07_剪映 AI 影片後製.pdf",
+    "category": "剪映 AI 影片後製篇",
+    "title": "Flow- 草船借箭",
+    "image": "slides_img/slide_077.png",
+    "notes": "【剪映 AI 影片後製 - 第 3 頁】Flow- 草船借箭 | 剪 映 - 影 片 語 音 旁 白 | 主 題 式 作 品 | 1 . G e m i n i  寫 文 案 | 2 . F l o w  生 成 影 片 | 3 . 剪 映  影 片 後 製 作",
+    "content": "Flow- 草船借箭 | 剪 映 - 影 片 語 音 旁 白 | 主 題 式 作 品 | 1 . G e m i n i  寫 文 案 | 2 . F l o w  生 成 影 片 | 3 . 剪 映  影 片 後 製 作"
+  },
+  {
+    "slide_num": 78,
+    "orig_num": 4,
+    "source": "07_剪映 AI 影片後製.pdf",
+    "category": "剪映 AI 影片後製篇",
+    "title": "剪映 - 導⼊ Flow ⽣成的影⽚",
+    "image": "slides_img/slide_078.png",
+    "notes": "【剪映 AI 影片後製 - 第 4 頁】剪映 - 導⼊ Flow ⽣成的影⽚ | 1 . 啟 動 剪 映 | 2 . 開 始 創 作 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 開始創作 | 剪映程式-別升級 | 啟動時會自動詢問 | 升級時VIP功能要付費",
+    "content": "剪映 - 導⼊ Flow ⽣成的影⽚ | 1 . 啟 動 剪 映 | 2 . 開 始 創 作 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 開始創作 | 剪映程式-別升級 | 啟動時會自動詢問 | 升級時VIP功能要付費"
+  },
+  {
+    "slide_num": 79,
+    "orig_num": 5,
+    "source": "07_剪映 AI 影片後製.pdf",
+    "category": "剪映 AI 影片後製篇",
+    "title": "剪映 - 導⼊ Flow ⽣成的影⽚",
+    "image": "slides_img/slide_079.png",
+    "notes": "【剪映 AI 影片後製 - 第 5 頁】剪映 - 導⼊ Flow ⽣成的影⽚ | 2 . 點 選 - 導 入 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 開始創作",
+    "content": "剪映 - 導⼊ Flow ⽣成的影⽚ | 2 . 點 選 - 導 入 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 開始創作"
+  },
+  {
+    "slide_num": 80,
+    "orig_num": 6,
+    "source": "07_剪映 AI 影片後製.pdf",
+    "category": "剪映 AI 影片後製篇",
+    "title": "剪映 - 導⼊ Flow ⽣成的影⽚",
+    "image": "slides_img/slide_080.png",
+    "notes": "【剪映 AI 影片後製 - 第 6 頁】剪映 - 導⼊ Flow ⽣成的影⽚ | 3 . 按 住 S h i f t | 複 選 6 個 影 片 | 開 啟 匯 入 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 將影片匯入剪映",
+    "content": "剪映 - 導⼊ Flow ⽣成的影⽚ | 3 . 按 住 S h i f t | 複 選 6 個 影 片 | 開 啟 匯 入 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 將影片匯入剪映"
+  },
+  {
+    "slide_num": 81,
+    "orig_num": 7,
+    "source": "07_剪映 AI 影片後製.pdf",
+    "category": "剪映 AI 影片後製篇",
+    "title": "剪映 - 導⼊ Flow ⽣成的影⽚",
+    "image": "slides_img/slide_081.png",
+    "notes": "【剪映 AI 影片後製 - 第 7 頁】剪映 - 導⼊ Flow ⽣成的影⽚ | 4 . 影 片 依 順 序 拖 曳 到 | 時 間 軸 | 5 . 時 間 軸 縮 放 控 制 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 影片拖曳到時間軸",
+    "content": "剪映 - 導⼊ Flow ⽣成的影⽚ | 4 . 影 片 依 順 序 拖 曳 到 | 時 間 軸 | 5 . 時 間 軸 縮 放 控 制 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 影片拖曳到時間軸"
+  },
+  {
+    "slide_num": 82,
+    "orig_num": 8,
+    "source": "07_剪映 AI 影片後製.pdf",
+    "category": "剪映 AI 影片後製篇",
+    "title": "剪映 - 分離影⽚ - 畫⾯和聲⾳",
+    "image": "slides_img/slide_082.png",
+    "notes": "【剪映 AI 影片後製 - 第 8 頁】剪映 - 分離影⽚ - 畫⾯和聲⾳ | 1 . 影 片 導 入 剪 映 | 全 選 所 有 影 片 | 按 右 鍵 | 分 離 音 頻 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師",
+    "content": "剪映 - 分離影⽚ - 畫⾯和聲⾳ | 1 . 影 片 導 入 剪 映 | 全 選 所 有 影 片 | 按 右 鍵 | 分 離 音 頻 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師"
+  },
+  {
+    "slide_num": 83,
+    "orig_num": 9,
+    "source": "07_剪映 AI 影片後製.pdf",
+    "category": "剪映 AI 影片後製篇",
+    "title": "剪映 - 刪除聲⾳",
+    "image": "slides_img/slide_083.png",
+    "notes": "【剪映 AI 影片後製 - 第 9 頁】剪映 - 刪除聲⾳ | 2 . 點 選 聲 音 | D e l e t e 刪 除 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師",
+    "content": "剪映 - 刪除聲⾳ | 2 . 點 選 聲 音 | D e l e t e 刪 除 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師"
+  },
+  {
+    "slide_num": 84,
+    "orig_num": 10,
+    "source": "07_剪映 AI 影片後製.pdf",
+    "category": "剪映 AI 影片後製篇",
+    "title": "剪映 - 播放指標",
+    "image": "slides_img/slide_084.png",
+    "notes": "【剪映 AI 影片後製 - 第 10 頁】剪映 - 播放指標 | 3 . 白 色 箭 頭 | 播 放 指 標 | 顯 示 目 前 畫 面 | F l o w 每 段 8 秒 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | Meta 5",
+    "content": "剪映 - 播放指標 | 3 . 白 色 箭 頭 | 播 放 指 標 | 顯 示 目 前 畫 面 | F l o w 每 段 8 秒 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | Meta 5"
+  },
+  {
+    "slide_num": 85,
+    "orig_num": 11,
+    "source": "07_剪映 AI 影片後製.pdf",
+    "category": "剪映 AI 影片後製篇",
+    "title": "Gemini- 語⾳旁⽩⽂案 30 秒",
+    "image": "slides_img/slide_085.png",
+    "notes": "【剪映 AI 影片後製 - 第 11 頁】Gemini- 語⾳旁⽩⽂案 30 秒 | 寫 故 事 旁 白 語 音 文 | 案 ,  3 0 秒 長 度 , 寫 成 一 | 段 文 案 , 不 要 時 間 序 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師",
+    "content": "Gemini- 語⾳旁⽩⽂案 30 秒 | 寫 故 事 旁 白 語 音 文 | 案 ,  3 0 秒 長 度 , 寫 成 一 | 段 文 案 , 不 要 時 間 序 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師"
+  },
+  {
+    "slide_num": 86,
+    "orig_num": 12,
+    "source": "07_剪映 AI 影片後製.pdf",
+    "category": "剪映 AI 影片後製篇",
+    "title": "剪映 - ⽂字轉語⾳",
+    "image": "slides_img/slide_086.png",
+    "notes": "【剪映 AI 影片後製 - 第 12 頁】剪映 - ⽂字轉語⾳ | 1 . 加 入 空 白 文 本 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 新增空白文本",
+    "content": "剪映 - ⽂字轉語⾳ | 1 . 加 入 空 白 文 本 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 新增空白文本"
+  },
+  {
+    "slide_num": 87,
+    "orig_num": 13,
+    "source": "07_剪映 AI 影片後製.pdf",
+    "category": "剪映 AI 影片後製篇",
+    "title": "剪映 - ⽂字轉語⾳",
+    "image": "slides_img/slide_087.png",
+    "notes": "【剪映 AI 影片後製 - 第 13 頁】剪映 - ⽂字轉語⾳ | 2 . 片 頭 語 音 旁 白 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 貼入文字",
+    "content": "剪映 - ⽂字轉語⾳ | 2 . 片 頭 語 音 旁 白 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 貼入文字"
+  },
+  {
+    "slide_num": 88,
+    "orig_num": 14,
+    "source": "07_剪映 AI 影片後製.pdf",
+    "category": "剪映 AI 影片後製篇",
+    "title": "剪映 - ⽂字轉語⾳",
+    "image": "slides_img/slide_088.png",
+    "notes": "【剪映 AI 影片後製 - 第 14 頁】剪映 - ⽂字轉語⾳ | 3 . 方 便 選 擇 語 音 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 屬性調整布局",
+    "content": "剪映 - ⽂字轉語⾳ | 3 . 方 便 選 擇 語 音 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 屬性調整布局"
+  },
+  {
+    "slide_num": 89,
+    "orig_num": 15,
+    "source": "07_剪映 AI 影片後製.pdf",
+    "category": "剪映 AI 影片後製篇",
+    "title": "剪映 - ⽂字轉語⾳",
+    "image": "slides_img/slide_089.png",
+    "notes": "【剪映 AI 影片後製 - 第 15 頁】剪映 - ⽂字轉語⾳ | 1 . 朗 讀 | 2 . 選 擇 語 音 | 3 . 開 始 朗 讀 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 朗讀",
+    "content": "剪映 - ⽂字轉語⾳ | 1 . 朗 讀 | 2 . 選 擇 語 音 | 3 . 開 始 朗 讀 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 朗讀"
+  },
+  {
+    "slide_num": 90,
+    "orig_num": 16,
+    "source": "07_剪映 AI 影片後製.pdf",
+    "category": "剪映 AI 影片後製篇",
+    "title": "剪映 - ⽂字轉語⾳",
+    "image": "slides_img/slide_090.png",
+    "notes": "【剪映 AI 影片後製 - 第 16 頁】剪映 - ⽂字轉語⾳ | 完 成 片 頭 語 音 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 片頭語音",
+    "content": "剪映 - ⽂字轉語⾳ | 完 成 片 頭 語 音 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 片頭語音"
+  },
+  {
+    "slide_num": 91,
+    "orig_num": 17,
+    "source": "07_剪映 AI 影片後製.pdf",
+    "category": "剪映 AI 影片後製篇",
+    "title": "剪映 - ⽂字轉語⾳",
+    "image": "slides_img/slide_091.png",
+    "notes": "【剪映 AI 影片後製 - 第 17 頁】剪映 - ⽂字轉語⾳ | 1 . 拖 曳 調 整 文 字 位 置 | 2 . 更 換 旁 白 文 字 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 第1段分鏡旁白",
+    "content": "剪映 - ⽂字轉語⾳ | 1 . 拖 曳 調 整 文 字 位 置 | 2 . 更 換 旁 白 文 字 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 第1段分鏡旁白"
+  },
+  {
+    "slide_num": 92,
+    "orig_num": 18,
+    "source": "07_剪映 AI 影片後製.pdf",
+    "category": "剪映 AI 影片後製篇",
+    "title": "剪映 - ⽂字轉語⾳",
+    "image": "slides_img/slide_092.png",
+    "notes": "【剪映 AI 影片後製 - 第 18 頁】剪映 - ⽂字轉語⾳ | 1.朗讀 | 2.選擇語音 | 3.開始朗讀 | 選擇相同語音人聲 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 第1段分鏡旁白",
+    "content": "剪映 - ⽂字轉語⾳ | 1.朗讀 | 2.選擇語音 | 3.開始朗讀 | 選擇相同語音人聲 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 第1段分鏡旁白"
+  },
+  {
+    "slide_num": 93,
+    "orig_num": 19,
+    "source": "07_剪映 AI 影片後製.pdf",
+    "category": "剪映 AI 影片後製篇",
+    "title": "剪映 - ⽂字轉語⾳",
+    "image": "slides_img/slide_093.png",
+    "notes": "【剪映 AI 影片後製 - 第 19 頁】剪映 - ⽂字轉語⾳ | 1.畫面和聲音就會同 | 步相同 | 選擇相同語音人聲 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 完成分鏡語音旁白",
+    "content": "剪映 - ⽂字轉語⾳ | 1.畫面和聲音就會同 | 步相同 | 選擇相同語音人聲 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 完成分鏡語音旁白"
+  },
+  {
+    "slide_num": 94,
+    "orig_num": 20,
+    "source": "07_剪映 AI 影片後製.pdf",
+    "category": "剪映 AI 影片後製篇",
+    "title": "記事本 - 進⾏分段",
+    "image": "slides_img/slide_094.png",
+    "notes": "【剪映 AI 影片後製 - 第 20 頁】記事本 - 進⾏分段 | 使 用 記 事 本 | 整 理 全 部 語 音 文 案 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 分段語音旁白",
+    "content": "記事本 - 進⾏分段 | 使 用 記 事 本 | 整 理 全 部 語 音 文 案 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 分段語音旁白"
+  },
+  {
+    "slide_num": 95,
+    "orig_num": 21,
+    "source": "07_剪映 AI 影片後製.pdf",
+    "category": "剪映 AI 影片後製篇",
+    "title": "剪映 -AI 上字幕",
+    "image": "slides_img/slide_095.png",
+    "notes": "【剪映 AI 影片後製 - 第 21 頁】剪映 -AI 上字幕 | 1 . 播 放 指 標 - 移 至 最 前 方 | 2 . 文 本 \\ 智 能 字 幕 \\ | 文 稿 匹 配 \\ 開 始 匹 配 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 智能字幕-二種方式",
+    "content": "剪映 -AI 上字幕 | 1 . 播 放 指 標 - 移 至 最 前 方 | 2 . 文 本 \\ 智 能 字 幕 \\ | 文 稿 匹 配 \\ 開 始 匹 配 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 智能字幕-二種方式"
+  },
+  {
+    "slide_num": 96,
+    "orig_num": 22,
+    "source": "07_剪映 AI 影片後製.pdf",
+    "category": "剪映 AI 影片後製篇",
+    "title": "剪映 -AI 上字幕",
+    "image": "slides_img/slide_096.png",
+    "notes": "【剪映 AI 影片後製 - 第 22 頁】剪映 -AI 上字幕 | 3 . 貼 上 分 段 好 的 文 案 | 4 . 開 始 匹 配 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 智能字幕-二種方式",
+    "content": "剪映 -AI 上字幕 | 3 . 貼 上 分 段 好 的 文 案 | 4 . 開 始 匹 配 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 智能字幕-二種方式"
+  },
+  {
+    "slide_num": 97,
+    "orig_num": 23,
+    "source": "07_剪映 AI 影片後製.pdf",
+    "category": "剪映 AI 影片後製篇",
+    "title": "剪映 -AI 上字幕",
+    "image": "slides_img/slide_097.png",
+    "notes": "【剪映 AI 影片後製 - 第 23 頁】剪映 -AI 上字幕 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 文字和聲音就對齊了 | 5 . 剪 映 A I  上 字 幕 | 非 常 快 速 方 便 | 6 . 文 字 加 上 描 邊",
+    "content": "剪映 -AI 上字幕 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 文字和聲音就對齊了 | 5 . 剪 映 A I  上 字 幕 | 非 常 快 速 方 便 | 6 . 文 字 加 上 描 邊"
+  },
+  {
+    "slide_num": 98,
+    "orig_num": 24,
+    "source": "07_剪映 AI 影片後製.pdf",
+    "category": "剪映 AI 影片後製篇",
+    "title": "剪映 -AI 上字幕",
+    "image": "slides_img/slide_098.png",
+    "notes": "【剪映 AI 影片後製 - 第 24 頁】剪映 -AI 上字幕 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 文字屬性調整 | 6.拖曳框選所有字幕 | 7.在上側.修改文字格式 | 字號.白色描邊",
+    "content": "剪映 -AI 上字幕 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 文字屬性調整 | 6.拖曳框選所有字幕 | 7.在上側.修改文字格式 | 字號.白色描邊"
+  },
+  {
+    "slide_num": 99,
+    "orig_num": 25,
+    "source": "07_剪映 AI 影片後製.pdf",
+    "category": "剪映 AI 影片後製篇",
+    "title": "剪映 - 影⽚標題⽂字",
+    "image": "slides_img/slide_099.png",
+    "notes": "【剪映 AI 影片後製 - 第 25 頁】剪映 - 影⽚標題⽂字 | 1 . 文 本 \\ 新 建 文 本 | 默 認 文 本  + | 2 . 輸 入 “ 草 船 借 箭 ” | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 字幕加上描邊",
+    "content": "剪映 - 影⽚標題⽂字 | 1 . 文 本 \\ 新 建 文 本 | 默 認 文 本  + | 2 . 輸 入 “ 草 船 借 箭 ” | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 字幕加上描邊"
+  },
+  {
+    "slide_num": 100,
+    "orig_num": 26,
+    "source": "07_剪映 AI 影片後製.pdf",
+    "category": "剪映 AI 影片後製篇",
+    "title": "剪映 - 影⽚標題⽂字",
+    "image": "slides_img/slide_100.png",
+    "notes": "【剪映 AI 影片後製 - 第 26 頁】剪映 - 影⽚標題⽂字 | 3 . 拖 曳 標 題 文 字 長 度 和 | 影 片 對 齊 | 4 . 修 改 標 題 文 字 格 式 , 加 | 上 描 邊 . 字 號 放 大 | 5 . 拖 曳 位 置 到 最 上 方 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 標題修改",
+    "content": "剪映 - 影⽚標題⽂字 | 3 . 拖 曳 標 題 文 字 長 度 和 | 影 片 對 齊 | 4 . 修 改 標 題 文 字 格 式 , 加 | 上 描 邊 . 字 號 放 大 | 5 . 拖 曳 位 置 到 最 上 方 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 標題修改"
+  },
+  {
+    "slide_num": 101,
+    "orig_num": 27,
+    "source": "07_剪映 AI 影片後製.pdf",
+    "category": "剪映 AI 影片後製篇",
+    "title": "剪映 - 背景⾳樂",
+    "image": "slides_img/slide_101.png",
+    "notes": "【剪映 AI 影片後製 - 第 27 頁】剪映 - 背景⾳樂 | 1 . 音 頻 | 2 . 音 樂 素 材 | 3 . 擇 音 樂 | 4 . 點  +   就 加 入 了 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 加音樂",
+    "content": "剪映 - 背景⾳樂 | 1 . 音 頻 | 2 . 音 樂 素 材 | 3 . 擇 音 樂 | 4 . 點  +   就 加 入 了 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 加音樂"
+  },
+  {
+    "slide_num": 102,
+    "orig_num": 28,
+    "source": "07_剪映 AI 影片後製.pdf",
+    "category": "剪映 AI 影片後製篇",
+    "title": "剪映 - 背景⾳樂",
+    "image": "slides_img/slide_102.png",
+    "notes": "【剪映 AI 影片後製 - 第 28 頁】剪映 - 背景⾳樂 | 1 . 播 放 頭 移 至 最 後 | 2 . 分 割 | 3 . 將 後 段 音 樂 刪 除 | D e l e t e  鍵 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 刪除多餘音樂",
+    "content": "剪映 - 背景⾳樂 | 1 . 播 放 頭 移 至 最 後 | 2 . 分 割 | 3 . 將 後 段 音 樂 刪 除 | D e l e t e  鍵 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 刪除多餘音樂"
+  },
+  {
+    "slide_num": 103,
+    "orig_num": 29,
+    "source": "07_剪映 AI 影片後製.pdf",
+    "category": "剪映 AI 影片後製篇",
+    "title": "剪映 - 背景⾳樂",
+    "image": "slides_img/slide_103.png",
+    "notes": "【剪映 AI 影片後製 - 第 29 頁】剪映 - 背景⾳樂 | 1 . 選 取 音 樂 | 2 . 音 量 往 左 移 | 3 . 聽 看 看 效 果 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 降低音樂音量",
+    "content": "剪映 - 背景⾳樂 | 1 . 選 取 音 樂 | 2 . 音 量 往 左 移 | 3 . 聽 看 看 效 果 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 降低音樂音量"
+  },
+  {
+    "slide_num": 104,
+    "orig_num": 30,
+    "source": "07_剪映 AI 影片後製.pdf",
+    "category": "剪映 AI 影片後製篇",
+    "title": "剪映 - 導出 MP4 影⽚",
+    "image": "slides_img/slide_104.png",
+    "notes": "【剪映 AI 影片後製 - 第 30 頁】剪映 - 導出 MP4 影⽚ | 1 . 檔 案 名 稱 修 改 | 2 . 導 出   M P 4 影 片 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 檔案名稱修改",
+    "content": "剪映 - 導出 MP4 影⽚ | 1 . 檔 案 名 稱 修 改 | 2 . 導 出   M P 4 影 片 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 檔案名稱修改"
+  },
+  {
+    "slide_num": 105,
+    "orig_num": 31,
+    "source": "07_剪映 AI 影片後製.pdf",
+    "category": "剪映 AI 影片後製篇",
+    "title": "剪映 - 導出 MP4 影⽚",
+    "image": "slides_img/slide_105.png",
+    "notes": "【剪映 AI 影片後製 - 第 31 頁】剪映 - 導出 MP4 影⽚ | 3 . 點 選  - 導 出 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 藍色勾選-視頻導出",
+    "content": "剪映 - 導出 MP4 影⽚ | 3 . 點 選  - 導 出 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 藍色勾選-視頻導出"
+  },
+  {
+    "slide_num": 106,
+    "orig_num": 32,
+    "source": "07_剪映 AI 影片後製.pdf",
+    "category": "剪映 AI 影片後製篇",
+    "title": "剪映 - 導出 MP4 影⽚",
+    "image": "slides_img/slide_106.png",
+    "notes": "【剪映 AI 影片後製 - 第 32 頁】剪映 - 導出 MP4 影⽚ | 4 . 打 開 文 件 夾 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 影片所有位置",
+    "content": "剪映 - 導出 MP4 影⽚ | 4 . 打 開 文 件 夾 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 影片所有位置"
+  },
+  {
+    "slide_num": 107,
+    "orig_num": 33,
+    "source": "07_剪映 AI 影片後製.pdf",
+    "category": "剪映 AI 影片後製篇",
+    "title": "剪映 - 導出 MP4 影⽚",
+    "image": "slides_img/slide_107.png",
+    "notes": "【剪映 AI 影片後製 - 第 33 頁】剪映 - 導出 MP4 影⽚ | 完 成 作 品 | 分 享 發 佈 到 臉 書 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 影片所有位置",
+    "content": "剪映 - 導出 MP4 影⽚ | 完 成 作 品 | 分 享 發 佈 到 臉 書 | 剪 映 - 影 片 語 音 旁 白 | 聰 賢 老 師 | 影片所有位置"
+  }
+];

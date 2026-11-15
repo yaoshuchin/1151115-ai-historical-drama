@@ -1,0 +1,10 @@
+# OS and IDE files
+.DS_Store
+Thumbs.db
+*.tmp
+__pycache__/
+*.pyc
+
+# Local environments
+.venv/
+venv/
