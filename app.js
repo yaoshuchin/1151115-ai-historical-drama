@@ -98,7 +98,24 @@
     modalCloseBtn: document.getElementById('modalCloseBtn'),
     passwordGateModal: document.getElementById('passwordGateModal'),
     gateInput: document.getElementById('gateInput'),
-    gateSubmitBtn: document.getElementById('gateSubmitBtn')
+    gateSubmitBtn: document.getElementById('gateSubmitBtn'),
+
+    // 首尾幀展台與多語字幕
+    startEndFrameStudio: document.getElementById('startEndFrameStudio'),
+    frameSegLabel: document.getElementById('frameSegLabel'),
+    startFrameImg: document.getElementById('startFrameImg'),
+    endFrameImg: document.getElementById('endFrameImg'),
+    subtitlesBar: document.getElementById('subtitlesBar'),
+    subtitlePills: document.getElementById('subtitlePills'),
+
+    // Gemini 技能與心智圖
+    copyGeminiSkillBtn: document.getElementById('copyGeminiSkillBtn'),
+    geminiSkillCode: document.getElementById('geminiSkillCode'),
+    copyTplBtns: document.querySelectorAll('.copy-tpl-btn'),
+    openMindmapBtn: document.getElementById('openMindmapBtn'),
+    closeMindmapBtn: document.getElementById('closeMindmapBtn'),
+    mindmapModal: document.getElementById('mindmapModal'),
+    mindmapThumbTrigger: document.getElementById('mindmapThumbTrigger')
   };
 
   // ==========================================
@@ -267,6 +284,30 @@
       }
     }
 
+    // 多語系 SRT 字幕處理
+    if (dom.subtitlesBar && dom.subtitlePills) {
+      if (drama.subtitles && Object.keys(drama.subtitles).length > 0) {
+        dom.subtitlesBar.style.display = 'flex';
+        dom.subtitlePills.innerHTML = '';
+        const langMap = {
+          'zh': { label: '🇹🇼 繁體中文 SRT', file: '成吉思汗_中文.srt' },
+          'en': { label: '🇺🇸 English SRT', file: '成吉思汗_EN.srt' },
+          'ja': { label: '🇯🇵 日本語 SRT', file: '成吉思汗_JA.srt' }
+        };
+        Object.entries(drama.subtitles).forEach(([k, srtPath]) => {
+          const info = langMap[k] || { label: `${k.toUpperCase()} SRT`, file: `${k}.srt` };
+          const a = document.createElement('a');
+          a.className = 'sub-pill-btn';
+          a.href = srtPath;
+          a.download = info.file;
+          a.innerHTML = `<i class="fa-solid fa-download"></i> ${info.label}`;
+          dom.subtitlePills.appendChild(a);
+        });
+      } else {
+        dom.subtitlesBar.style.display = 'none';
+      }
+    }
+
     // 建立視訊切換按鈕
     if (dom.videoModeNav) {
       dom.videoModeNav.innerHTML = '';
@@ -275,7 +316,7 @@
         fullBtn.className = 'mode-btn active';
         fullBtn.innerHTML = '<i class="fa-solid fa-film"></i> 完整成片';
         fullBtn.addEventListener('click', () => {
-          setStageVideo(drama.full_video, fullBtn);
+          setStageVideo(drama.full_video, fullBtn, null);
         });
         dom.videoModeNav.appendChild(fullBtn);
       }
@@ -286,15 +327,16 @@
         segBtn.className = `mode-btn ${isFirstActive ? 'active' : ''}`;
         segBtn.innerHTML = `<i class="fa-solid fa-play"></i> ${seg.name}`;
         segBtn.addEventListener('click', () => {
-          setStageVideo(seg.video, segBtn);
+          setStageVideo(seg.video, segBtn, seg);
         });
         dom.videoModeNav.appendChild(segBtn);
       });
     }
 
-    // 設定初始視訊
+    // 設定初始視訊與首尾幀狀態
     const initialVideo = drama.full_video || (drama.segments[0] ? drama.segments[0].video : '');
-    setStageVideo(initialVideo);
+    const initialSeg = !drama.full_video && drama.segments[0] ? drama.segments[0] : null;
+    setStageVideo(initialVideo, null, initialSeg);
 
     // 配樂播放器
     if (dom.stageAudio && drama.bgm) {
@@ -320,7 +362,7 @@
     }
   }
 
-  function setStageVideo(videoSrc, activeBtn) {
+  function setStageVideo(videoSrc, activeBtn, segObj) {
     if (!dom.stageVideo || !videoSrc) return;
     state.currentVideoSrc = videoSrc;
     dom.stageVideo.src = videoSrc;
@@ -332,6 +374,18 @@
     }
     if (dom.downloadVideoBtn) {
       dom.downloadVideoBtn.href = videoSrc;
+    }
+
+    // 首尾幀展台聯動
+    if (dom.startEndFrameStudio) {
+      if (segObj && segObj.start_frame && segObj.end_frame) {
+        dom.startEndFrameStudio.style.display = 'block';
+        if (dom.startFrameImg) dom.startFrameImg.src = segObj.start_frame;
+        if (dom.endFrameImg) dom.endFrameImg.src = segObj.end_frame;
+        if (dom.frameSegLabel) dom.frameSegLabel.textContent = `${segObj.name} · 首尾幀控制`;
+      } else {
+        dom.startEndFrameStudio.style.display = 'none';
+      }
     }
   }
 
@@ -818,6 +872,58 @@
         navigator.clipboard.writeText(dom.formulaOutput.textContent).then(() => {
           showToast('📋 已複製 32 秒歷史劇 Prompt 指令至剪貼簿！');
         });
+      });
+    }
+
+    // 複製 Google Gemini 技能全文
+    if (dom.copyGeminiSkillBtn) {
+      dom.copyGeminiSkillBtn.addEventListener('click', () => {
+        if (!dom.geminiSkillCode) return;
+        navigator.clipboard.writeText(dom.geminiSkillCode.textContent).then(() => {
+          showToast('📋 已成功複製 Google Gemini 技能全文！可直接貼入 Gemini 技能設定。');
+        }).catch(err => {
+          showToast('❌ 複製失敗，請手動全選複製');
+        });
+      });
+    }
+
+    // 複製課堂提詞範本按鈕
+    const copyTplBtns = document.querySelectorAll('.copy-tpl-btn');
+    if (copyTplBtns) {
+      copyTplBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const tplId = btn.dataset.tpl;
+          const el = document.getElementById(tplId);
+          if (el) {
+            navigator.clipboard.writeText(el.textContent.trim()).then(() => {
+              showToast('📋 已複製提詞範本！請於 Gemini 中貼上使用。');
+            });
+          }
+        });
+      });
+    }
+
+    // 互動式心智圖 (Markmap) 彈窗
+    if (dom.openMindmapBtn && dom.mindmapModal) {
+      dom.openMindmapBtn.addEventListener('click', () => {
+        dom.mindmapModal.classList.add('show');
+      });
+    }
+    if (dom.mindmapThumbTrigger && dom.mindmapModal) {
+      dom.mindmapThumbTrigger.addEventListener('click', () => {
+        dom.mindmapModal.classList.add('show');
+      });
+    }
+    if (dom.closeMindmapBtn && dom.mindmapModal) {
+      dom.closeMindmapBtn.addEventListener('click', () => {
+        dom.mindmapModal.classList.remove('show');
+      });
+    }
+    if (dom.mindmapModal) {
+      dom.mindmapModal.addEventListener('click', (e) => {
+        if (e.target === dom.mindmapModal) {
+          dom.mindmapModal.classList.remove('show');
+        }
       });
     }
 

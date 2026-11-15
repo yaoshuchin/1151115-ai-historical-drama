@@ -36,9 +36,10 @@
       <nav class="nav-links">
         <a href="#hero" class="nav-link active"><i class="fa-solid fa-landmark"></i> <span>研習總覽</span></a>
         <a href="#drama" class="nav-link"><i class="fa-solid fa-masks-theater"></i> <span>歷史名劇</span></a>
+        <a href="#gemini-skill" class="nav-link"><i class="fa-solid fa-wand-magic-sparkles"></i> <span>Gemini技能</span></a>
         <a href="#studio" class="nav-link"><i class="fa-solid fa-scroll"></i> <span>Prompt 庫</span></a>
         <a href="#lab" class="nav-link"><i class="fa-solid fa-user-astronaut"></i> <span>三視定妝</span></a>
-        <a href="#deck" class="nav-link"><i class="fa-solid fa-chalkboard-user"></i> <span>107頁簡報</span></a>
+        <a href="#deck" class="nav-link"><i class="fa-solid fa-chalkboard-user"></i> <span>140頁講義</span></a>
         <a href="#toolbox" class="nav-link"><i class="fa-solid fa-toolbox"></i> <span>剪映與素材</span></a>
       </nav>
 
@@ -98,9 +99,9 @@
 
         <!-- 動作按鈕 -->
         <div class="hero-actions">
-          <a href="#drama" class="btn btn-primary"><i class="fa-solid fa-play"></i> 鑑賞九大歷史名劇</a>
-          <a href="#studio" class="btn btn-outline"><i class="fa-solid fa-wand-magic-sparkles"></i> 40 歷史人物 Prompt 生成器</a>
-          <a href="#deck" class="btn btn-outline"><i class="fa-solid fa-tv"></i> 107 頁旗艦投影片巡演</a>
+          <a href="#drama" class="btn btn-primary"><i class="fa-solid fa-play"></i> 鑑賞十大歷史名劇 (成吉思汗)</a>
+          <a href="#gemini-skill" class="btn btn-primary" style="background:linear-gradient(135deg, #e5b95c, #d97736); border:none; color:#1a0f05;"><i class="fa-solid fa-wand-magic-sparkles"></i> Gemini 影片 Skill 技能庫</a>
+          <a href="#deck" class="btn btn-outline"><i class="fa-solid fa-tv"></i> 140 頁旗艦投影片巡演</a>
         </div>
       </div>
 
@@ -162,8 +163,8 @@
     <div class="container">
       <div class="section-header">
         <span class="section-badge">DRAMA MASTERPIECES</span>
-        <h2 class="section-title">九大 AI 歷史名劇旗艦典藏館</h2>
-        <p class="section-desc">收錄聰賢老師親自指導與創作之 9 套史詩短劇，涵蓋三國、楚漢、春秋、盛唐、大明與南北朝傳奇。</p>
+        <h2 class="section-title">十大 AI 歷史名劇旗艦典藏館</h2>
+        <p class="section-desc">收錄聰賢老師親自指導與創作之 10 套史詩短劇（含旗艦十部曲《成吉思汗》），涵蓋三國、楚漢、春秋、盛唐、大明與南北朝傳奇。</p>
       </div>
 
       <div class="drama-layout">
@@ -171,7 +172,7 @@
         <aside class="drama-sidebar">
           <div class="drama-list-title">
             <span><i class="fa-solid fa-list-ul"></i> 經典劇目選單</span>
-            <small style="color:var(--text-muted);">共 9 部經典</small>
+            <small style="color:var(--text-muted);">共 10 部經典</small>
           </div>
           <div id="dramaListContainer">
             <!-- 由 app.js 動態渲染 -->
@@ -203,6 +204,40 @@
           <!-- 播放模式切換鈕 (成片 vs 分鏡) -->
           <div id="videoModeNav" class="video-mode-nav">
             <!-- 由 app.js 動態渲染按鈕 -->
+          </div>
+
+          <!-- 首尾幀奇蹟對比展台 (Start & End Frame Studio) -->
+          <div id="startEndFrameStudio" class="start-end-frame-studio" style="display:none;">
+            <div class="studio-bar-title">
+              <span><i class="fa-solid fa-camera-rotate"></i> Google Flow 首尾幀 (S&E) 控制奇蹟展台</span>
+              <span id="frameSegLabel" class="frame-seg-label">第 1 段分鏡</span>
+            </div>
+            <div class="frame-compare-grid">
+              <!-- 首幀 -->
+              <div class="frame-card">
+                <div class="frame-tag"><i class="fa-solid fa-play"></i> 起始首幀 (Start Frame)</div>
+                <div class="frame-thumb-box">
+                  <img id="startFrameImg" src="" alt="首幀圖片">
+                </div>
+              </div>
+              <div class="frame-arrow">
+                <i class="fa-solid fa-arrow-right-long"></i>
+                <span>Veo 3.1 運鏡演算</span>
+              </div>
+              <!-- 尾幀 -->
+              <div class="frame-card">
+                <div class="frame-tag"><i class="fa-solid fa-flag-checkered"></i> 終結尾幀 (End Frame)</div>
+                <div class="frame-thumb-box">
+                  <img id="endFrameImg" src="" alt="尾幀圖片">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 多語字幕下載與切換列 -->
+          <div id="subtitlesBar" class="subtitles-bar" style="display:none;">
+            <div class="subtitle-title"><i class="fa-solid fa-closed-captioning"></i> 國際化多語 SRT 字幕：</div>
+            <div class="subtitle-pills" id="subtitlePills"></div>
           </div>
 
           <!-- 劇情梗概與朗誦詩文 -->
@@ -238,6 +273,211 @@
             </div>
           </div>
         </main>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       Google Gemini 專屬 AI 影片生成技能 (Gemini Skill)
+       ========================================== -->
+  <section id="gemini-skill" class="gemini-skill-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge"><i class="fa-brands fa-google"></i> GOOGLE GEMINI 專屬技能</span>
+        <h2 class="section-title">Google Gemini 專屬 AI 影片技能 (Gemini Skill)</h2>
+        <p class="section-desc">
+          特別註明：本技能專為 <strong>Google Gemini (Gemline)</strong> 官方技能庫深度優化設計！由 <strong>黃文玉老師 (ayu)</strong> 授權研發，呂聰賢老師 1151115 研習指定為核心故事腳本與首尾幀提示詞生成大腦。
+        </p>
+      </div>
+
+      <!-- 專屬醒目橫幅提示 -->
+      <div class="gemini-alert-card">
+        <div class="alert-icon">🤖</div>
+        <div class="alert-body">
+          <div class="alert-tag">GEMINI SKILL 專屬認證 · 課堂標準配備</div>
+          <h4>什麼是 Gemini Skill（技能）？</h4>
+          <p>
+            Skill 是把多步驟的「提示詞工程、鏡頭焦段、光線質感、角色一致性與生成模式」打包成標準 SOP。
+            只要安裝在您的 <strong>Google Gemini</strong> 帳號中，在對話框輸入英文半形 <code>@</code> 即可一鍵呼叫，產出 100~200 字以上高精度微型視覺小說式提示詞，無縫對接 Google Flow (Veo 3.1)！
+          </p>
+        </div>
+      </div>
+
+      <!-- 五步安裝教學卡片 -->
+      <div class="sop-steps-wrap">
+        <h3 class="sub-heading"><i class="fa-solid fa-graduation-cap"></i> Google Gemini 技能安裝五步法 (官方標準 SOP)</h3>
+        <div class="sop-cards-grid">
+          <div class="sop-card">
+            <div class="sop-num">01</div>
+            <div class="sop-icon"><i class="fa-solid fa-arrow-right-to-bracket"></i></div>
+            <h4>登入 Gemini</h4>
+            <p>使用個人 Google 帳號登入 <a href="https://gemini.google.com/" target="_blank" rel="noopener" style="color:var(--accent-gold); text-decoration:underline;">Google Gemini</a>（免費或進階版皆可）。</p>
+          </div>
+          <div class="sop-card">
+            <div class="sop-num">02</div>
+            <div class="sop-icon"><i class="fa-solid fa-gear"></i></div>
+            <h4>進入技能設定</h4>
+            <p>點擊畫面左下角或右上角個人頭像旁的「<strong>設定</strong>」，選擇「<strong>技能 (Skills)</strong>」。</p>
+          </div>
+          <div class="sop-card">
+            <div class="sop-num">03</div>
+            <div class="sop-icon"><i class="fa-solid fa-file-arrow-up"></i></div>
+            <h4>上傳技能檔案</h4>
+            <p>點選「<strong>建立技能 (Add Skill)</strong>」，點擊上傳本站提供的 <code>AI MV-SKILL.md</code> 檔案（或直接貼入全文）。</p>
+          </div>
+          <div class="sop-card">
+            <div class="sop-num">04</div>
+            <div class="sop-icon"><i class="fa-solid fa-signature"></i></div>
+            <h4>命名英文小寫</h4>
+            <p>命名務必使用<strong>英文小寫</strong>（例如 <code>ai-video</code> 或 <code>ayu-ai-video</code>），⚠️ <strong>絕對不能包含中文或特殊符號</strong>！</p>
+          </div>
+          <div class="sop-card">
+            <div class="sop-num">05</div>
+            <div class="sop-icon"><i class="fa-solid fa-at"></i></div>
+            <h4>輸入 @ 立即呼叫</h4>
+            <p>在任何對話輸入框切換英文輸入法輸入 <code>@</code>，選取該技能，即可輸入主角與參數開始生成！</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 種生成方式解析 -->
+      <div class="modes-explain-grid">
+        <div class="mode-box">
+          <div class="mode-header">
+            <span class="mode-badge">方式 1</span>
+            <h4>純文字提示詞直出影片</h4>
+          </div>
+          <p>由 Gemini 一次輸出極度詳細的影片生成中文提示詞，包含旁白、對話、場景動態與攝影機運動，適合快速測試。</p>
+        </div>
+        <div class="mode-box">
+          <div class="mode-header">
+            <span class="mode-badge">方式 2</span>
+            <h4>首幀圖片 + 影片提示詞</h4>
+          </div>
+          <p>先生成「首幀圖片」中文提示詞，再提供「利用首幀生成影片」之運鏡與後續動態提示詞，可先定格構圖。</p>
+        </div>
+        <div class="mode-box featured">
+          <div class="mode-header">
+            <span class="mode-badge highlight">方式 3 · 最強首尾幀 (S&E)</span>
+            <h4>首尾幀圖片 + 影片提示詞</h4>
+          </div>
+          <p>聰賢老師研習最強力推薦！分別給出「首幀」與「尾幀」構圖提示詞，再給出兩者間的物理過渡運鏡，生成成功率最高、畫面最穩！</p>
+        </div>
+      </div>
+
+      <!-- 技能代碼檢視器與下載 -->
+      <div class="skill-code-section">
+        <div class="skill-code-header">
+          <div class="code-title">
+            <i class="fa-brands fa-markdown"></i>
+            <span>AI MV-SKILL.md (ayu-ai-video-formula-custom)</span>
+            <span class="version-tag">Google Gemini 專屬 Skill 規格</span>
+          </div>
+          <div class="code-actions">
+            <button id="copyGeminiSkillBtn" class="btn btn-primary btn-sm">
+              <i class="fa-solid fa-copy"></i> 複製 Gemini 技能全文
+            </button>
+            <a href="AI MV-SKILL.md" download="AI MV-SKILL.md" class="btn btn-outline btn-sm">
+              <i class="fa-solid fa-download"></i> 下載 AI MV-SKILL.md
+            </a>
+          </div>
+        </div>
+        <pre class="skill-code-pre"><code id="geminiSkillCode">---
+name: ayu-ai-video-formula-custom
+description: 協助產生自訂參數的AI短影片腳本、分鏡提示詞與素材設定。可自訂分段數、秒數、直橫式、風格及「影片生成方式（直出/首幀/首尾幀）」，並產生極度詳細的提示詞。
+---
+# AI 短影片腳本與分鏡提示詞生成器 (自訂參數+生成方式 終極版)
+
+## Summary
+這項技能將引導你協助使用者產出一套完整的「AI 影片生成公式」。此版本特別強化了「畫面細節、光影質感、構圖運鏡與動態物理」的極致描述，並且允許使用者選擇三種不同的「影片生成方式」。所有提示詞絕對不能只有一兩行，必須是非常詳盡的中文長篇敘述。對話及旁白必須指定為「中文普通話發音」。請在一次回覆中直接生成所有內容。
+
+## When to Use
+- 使用者要求製作 AI 短影片腳本或企劃，並可給定分段數、每段秒數、影片比例、影片風格，以及指定的影片生成方式。
+- 使用者要求極度詳細的提示詞與中文普通話發音設定。
+
+## Steps
+當使用者提出影片主題與相關設定後，請在一次回覆中直接生成以下所有內容。**注意：所有的提示詞都必須「極度詳細且具體」（至少 100~200 字以上的段落描述），絕對不能只有短短一、兩行文字！**
+
+### 1. 影片腳本與基礎設定
+- **影片腳本**：規劃對應長度的短影片腳本。明確列出每一小段的劇情發展，並標示時間區間。
+- **定裝照提示詞**：提供影片中「主要人物」的正、背、側面的定裝照「中文提示詞」。
+  - **終極細節要求**：鏡頭焦段、視角、具體光線、精確膚質與髮絲、布料紋理、畫質關鍵字(8k resolution, cinematic lighting 等)。
+
+### 2. 分鏡與影片生成提示詞
+根據使用者選擇的「影片生成方式」（若未指定，預設為方式3，或先詢問使用者），針對腳本中的「每一小段」提供對應的提示詞：
+
+*   **方式 1：直接由影片提示詞生成影片**
+    - 直接提供極度詳細的「影片生成中文提示詞」，包含「對話」及「旁白」、場景構圖、光線氛圍、人物站位表情、攝影機運動、動態與物理環境細節。
+*   **方式 2：首幀圖片 + 影片提示詞**
+    - 提供「首幀」圖片生成的中文提示詞（極度詳細的場景與人物構圖）。
+    - 提供「利用首幀圖片生成影片」的中文提示詞（包含「對話」及「旁白」，專注於攝影機運動、動態變化與後續動作）。
+*   **方式 3：首尾幀圖片 + 影片提示詞**
+    - 提供「首幀」與「尾幀」圖片生成的中文提示詞（極度詳細的場景與人物構圖變化）。
+    - 提供「利用首尾幀圖片生成影片」的中文提示詞（包含「對話」及「旁白」，專注於首尾幀之間的物理動態過渡與運鏡）。
+
+**所有方式皆需包含：**
+- **語音設定**：請提供「對話」及「旁白」的設定內容，並**明確標示「請使用中文普通話 (Mandarin Chinese) 來發音」**。
+
+### 3. 影片包裝與配樂設定
+- **吸睛劇名**：提供幾個吸引人的影片劇名建議。
+- **封面提示詞**：極具視覺張力的封面中文提示詞 (不可少於 50 字，包含比例與風格)。
+- **封底提示詞**：符合比例與風格的封底中文提示詞 (不可少於 50 字，帶有餘韻意境)。
+- **背景音樂建議**：適合氛圍、長度符合總秒數的背景音樂 (BGM) 風格描述與提示詞。
+
+## Gotchas
+- 確認使用者是否給定：段數、秒數、比例、風格、以及「影片生成方式 (1, 2, 或 3)」。若無，請先詢問確認。
+- **⚠️ 嚴格禁止簡短提示詞**：每個生成的提示詞（定裝照、首幀、尾幀、影片）**絕對不能只有一、二行**，必須是 100-200 字以上的高質量微型視覺小說描述，以確保生成品質。
+- 所有提示詞務必是「中文」。影片對話與旁白必須強調「中文普通話發音」。
+- 務必在「同一次回覆中」完整產出。
+</code></pre>
+      </div>
+
+      <!-- 課堂實戰提詞範本 (一鍵複製) -->
+      <div class="prompt-templates-box">
+        <h3 class="sub-heading"><i class="fa-solid fa-wand-magic-sparkles"></i> 課堂即用實戰提詞範本 (一鍵複製到 Gemini)</h3>
+        <div class="templates-grid">
+          <!-- 範本 1: 成吉思汗 (首尾幀 10 段) -->
+          <div class="template-card">
+            <div class="template-header">
+              <div class="template-title">
+                <span class="t-badge">首尾幀旗艦版</span>
+                <h4>《成吉思汗》十段史詩級微短劇</h4>
+              </div>
+              <button class="btn btn-outline btn-xs copy-tpl-btn" data-tpl="tpl1">
+                <i class="fa-solid fa-copy"></i> 複製提示詞
+              </button>
+            </div>
+            <div class="template-body" id="tpl1">@ai-video 請為我製作一部歷史劇短片腳本與分鏡：
+- 主題人物：成吉思汗（鐵木真）
+- 影片分段：10 段，每段 8 秒（總長約 80 秒）
+- 影片比例：16:9 橫式電影級比例
+- 影片風格：中國歷史史詩電影風格，冷峻大氣、金戈鐵馬、廣袤草原
+- 影片生成方式：方式 3（首尾幀圖片 + 影片提示詞）
+- 語言要求：對話及旁白明確指定為「中文普通話發音」
+請在一次回覆中完整產出定裝照、10段首尾幀與影片生成提示詞、吸睛劇名、封面/封底提示詞及背景音樂建議。</div>
+          </div>
+
+          <!-- 範本 2: 曹雪芹 (4段免費版練習) -->
+          <div class="template-card">
+            <div class="template-header">
+              <div class="template-title">
+                <span class="t-badge">免費版練習推薦</span>
+                <h4>《曹雪芹紅樓殘夢》四段小品劇</h4>
+              </div>
+              <button class="btn btn-outline btn-xs copy-tpl-btn" data-tpl="tpl2">
+                <i class="fa-solid fa-copy"></i> 複製提示詞
+              </button>
+            </div>
+            <div class="template-body" id="tpl2">@ai-video 請為我製作一部歷史人物短片腳本：
+- 主題人物：曹雪芹（紅樓夢作者）
+- 影片分段：4 段，每段 8 秒（適合 Google Flow 免費帳號 50 點練習）
+- 影片比例：16:9 橫式
+- 影片風格：清代古典水墨寫實，風雪破廟、殘卷寒燈
+- 影片生成方式：方式 3（首尾幀圖片 + 影片提示詞）
+- 語言要求：中文普通話發音
+請在同次回覆中完整產出人物定裝照、四段首尾幀與影片提示詞、封面封底與配樂建議。</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -362,14 +602,15 @@ Photorealistic cinematic style, 8k resolution, studio lighting, hyper-detailed f
     <div class="container">
       <div class="section-header">
         <span class="section-badge">INTERACTIVE PRESENTATION DECK</span>
-        <h2 class="section-title">全系列 107 頁旗艦簡報演講廳</h2>
-        <p class="section-desc">包含 Google Flow 完整工作流程、安裝上手、虛擬分身、角色固定與剪映 33 頁後製指南！</p>
+        <h2 class="section-title">全系列 140 頁旗艦簡報演講廳</h2>
+        <p class="section-desc">包含 1151115 最新影片創作全攻略 33 頁、Google Flow 工作流程、安裝上手、虛擬分身、角色固定與剪映後製全系列！</p>
       </div>
 
       <div class="deck-container">
         <!-- 分類過濾列 -->
         <div class="deck-cat-bar">
-          <button class="deck-cat-btn active" data-cat="all">全部投影片 (107 頁)</button>
+          <button class="deck-cat-btn active" data-cat="all">全部投影片 (140 頁)</button>
+          <button class="deck-cat-btn" data-cat="全攻略" style="color:var(--accent-gold); font-weight:700;"><i class="fa-solid fa-fire"></i> 1151115 影片創作全攻略篇 (33 頁)</button>
           <button class="deck-cat-btn" data-cat="工作流程">01. Google Flow 工作流程篇 (32 頁)</button>
           <button class="deck-cat-btn" data-cat="安裝">02. Google Flow 安裝設定篇 (10 頁)</button>
           <button class="deck-cat-btn" data-cat="虛擬形象">03. 創建虛擬形象個人分身篇 (19 頁)</button>
@@ -405,9 +646,70 @@ Photorealistic cinematic style, 8k resolution, studio lighting, hyper-detailed f
           <strong>💡 講稿筆記：</strong> 開始神奇的 AI 創作之旅，開啟 Google Flow 人工智慧影片創作大門。
         </div>
 
-        <!-- 底部 107 頁縮圖抽屜 -->
+        <!-- 底部 140 頁縮圖抽屜 -->
         <div id="thumbDrawer" class="thumb-drawer">
           <!-- 由 app.js 動態注入縮圖 -->
+        </div>
+      </div>
+
+      <!-- 1151115 研習數位資產專區 (Workshop 1151115 Assets) -->
+      <div class="workshop-assets-box">
+        <div class="workshop-assets-header">
+          <div class="assets-title-wrap">
+            <h3><i class="fa-solid fa-folder-open"></i> 1151115 研習全套數位教材與實戰資產庫</h3>
+            <p>整合 1151115 實作課程 NotebookLM 會議筆記、Markmap 課程架構心智圖與全套講義 PPTX / 寬版海報</p>
+          </div>
+          <div class="assets-quick-actions">
+            <button id="openMindmapBtn" class="btn btn-primary btn-sm">
+              <i class="fa-solid fa-sitemap"></i> 開啟課程心智圖 (Markmap)
+            </button>
+            <a href="講義/1151115-聰賢-AI歷史 影片創作全攻略1.pptx" download class="btn btn-outline btn-sm">
+              <i class="fa-solid fa-file-powerpoint"></i> 下載全攻略講義 (PPTX)
+            </a>
+          </div>
+        </div>
+
+        <div class="workshop-split-grid">
+          <!-- 左欄：NotebookLM 會議精華筆記 -->
+          <div class="asset-card-large">
+            <h4><i class="fa-solid fa-book-bookmark" style="color:var(--accent-gold);"></i> NotebookLM 研習會議逐字筆記與重點精華</h4>
+            <div class="notebooklm-highlights">
+              <h5>🎯 課程目標與工具準備</h5>
+              <ul>
+                <li>運用 AI 技能與 Google Flow Agent，完成歷史人物短片腳本、影像、配音、字幕與輸出。</li>
+                <li>新學員下載簡易 6.1 與 Skill.md；舊學員下載 Skill 即可。Skill 約 4KB，切勿與資料夾或程式混淆。</li>
+              </ul>
+              <h5>⚡ Google Flow 點數精算與避坑指南</h5>
+              <ul>
+                <li>個人免費帳號每日 50 點且不累積；8 秒影片耗用 12~24 點，10 秒影片示例耗用 30 點。</li>
+                <li>Google Flow 安全機制會阻擋自殺、血腥暴力與幼童情節（如《霸王別姬》需改為倒在懷中）。</li>
+              </ul>
+              <h5>🎬 剪映 9 步後製與多語 SRT 字幕</h5>
+              <ul>
+                <li>文字轉語音：免費模型中文發音較生硬，建議於剪映使用文字轉語音生成自然溫潤旁白。</li>
+                <li>多語字幕：匯出 SRT 後透過 AI 翻譯成英文與日文，於 YouTube Studio 上傳多語系字幕。</li>
+              </ul>
+            </div>
+            <div style="margin-top:auto; padding-top:12px; display:flex; gap:10px;">
+              <a href="講義/AI影片製作與剪輯實作課程-notebooklm-2026-11-15.md" download class="btn btn-outline btn-xs">
+                <i class="fa-solid fa-download"></i> 下載 NotebookLM 完整筆記 (MD)
+              </a>
+            </div>
+          </div>
+
+          <!-- 右欄：Markmap 課程架構心智圖 -->
+          <div class="asset-card-large">
+            <h4><i class="fa-solid fa-diagram-project" style="color:#4299e1;"></i> AI 影片製作與剪輯實作課程架構心智圖</h4>
+            <div class="mindmap-preview-thumb" id="mindmapThumbTrigger" title="點擊開啟全螢幕互動心智圖">
+              <img src="slides_img/slide_108.png" alt="課程心智圖預覽">
+              <div class="mindmap-play-overlay">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> 點擊進入全螢幕互動心智圖
+              </div>
+            </div>
+            <p style="font-size:0.86rem; color:var(--text-muted); margin:0;">
+              採用純前端 Markmap 向量引擎，涵蓋「課前準備、建立 Skill、故事腳本、Google Flow 製作、素材剪輯」五大維度。
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -590,12 +892,60 @@ Photorealistic cinematic style, 8k resolution, studio lighting, hyper-detailed f
             <i class="fa-solid fa-file-pdf" style="color:#c93737; font-size:1.4rem;"></i>
           </a>
 
-          <a class="download-item" href="skill.md" download="skill.md">
+          <a class="download-item" href="AI MV-SKILL.md" download="AI MV-SKILL.md" style="border-color:var(--accent-gold); background:rgba(229,185,92,0.08);">
             <div class="file-meta">
-              <h5>skill.md (ai-video 代理人技能檔)</h5>
-              <span>Gemini 影片技能設定標準檔 · 3 KB</span>
+              <h5 style="color:var(--accent-gold);">⭐ AI MV-SKILL.md (Google Gemini 專屬技能)</h5>
+              <span>黃文玉老師研發 · 提示詞與首尾幀生成終極版 · 4 KB</span>
             </div>
-            <i class="fa-solid fa-robot" style="color:var(--accent-gold); font-size:1.4rem;"></i>
+            <i class="fa-solid fa-wand-magic-sparkles" style="color:var(--accent-gold); font-size:1.5rem;"></i>
+          </a>
+
+          <a class="download-item" href="講義/1151115-聰賢-AI歷史 影片創作全攻略1.pptx" download>
+            <div class="file-meta">
+              <h5>1151115-聰賢-AI歷史 影片創作全攻略1.pptx</h5>
+              <span>PowerPoint 研習旗艦講義(上) · 11.1 MB</span>
+            </div>
+            <i class="fa-solid fa-file-powerpoint" style="color:#d97736; font-size:1.4rem;"></i>
+          </a>
+
+          <a class="download-item" href="講義/1151115-聰賢-AI歷史 影片創作全攻略2.pptx" download>
+            <div class="file-meta">
+              <h5>1151115-聰賢-AI歷史 影片創作全攻略2.pptx</h5>
+              <span>PowerPoint 研習旗艦講義(中) · 25.3 MB</span>
+            </div>
+            <i class="fa-solid fa-file-powerpoint" style="color:#d97736; font-size:1.4rem;"></i>
+          </a>
+
+          <a class="download-item" href="講義/1151115-聰賢-AI歷史 影片創作全攻略3.pptx" download>
+            <div class="file-meta">
+              <h5>1151115-聰賢-AI歷史 影片創作全攻略3.pptx</h5>
+              <span>PowerPoint 研習旗艦講義(下) · 24.7 MB</span>
+            </div>
+            <i class="fa-solid fa-file-powerpoint" style="color:#d97736; font-size:1.4rem;"></i>
+          </a>
+
+          <a class="download-item" href="作品集/成吉思汗/成吉思汗-完成作品.mp4" download="成吉思汗-完成作品.mp4">
+            <div class="file-meta">
+              <h5>成吉思汗-完成作品.mp4 (旗艦十部曲成片)</h5>
+              <span>1080P 高畫質完整短劇成片 (含旁白/配樂) · 34.5 MB</span>
+            </div>
+            <i class="fa-solid fa-film" style="color:var(--accent-gold); font-size:1.4rem;"></i>
+          </a>
+
+          <a class="download-item" href="講義/AI影片製作與剪輯實作課程-notebooklm-2026-11-15.md" download>
+            <div class="file-meta">
+              <h5>AI影片製作與剪輯實作課程-notebooklm-2026-11-15.md</h5>
+              <span>NotebookLM 研習會議逐字筆記與重點摘要 · 152 KB</span>
+            </div>
+            <i class="fa-solid fa-file-lines" style="color:#38a169; font-size:1.4rem;"></i>
+          </a>
+
+          <a class="download-item" href="講義/ai影片製作與剪輯實作課程心智圖.html" download>
+            <div class="file-meta">
+              <h5>ai影片製作與剪輯實作課程心智圖.html</h5>
+              <span>Markmap 互動架構心智圖獨立檔 · 5 KB</span>
+            </div>
+            <i class="fa-solid fa-sitemap" style="color:#4299e1; font-size:1.4rem;"></i>
           </a>
 
           <div class="download-item" style="cursor:pointer;" onclick="openLightbox('qrcode.png', '掃描 QR Code 手機直達本平台')">
@@ -665,5 +1015,18 @@ Photorealistic cinematic style, 8k resolution, studio lighting, hyper-detailed f
   <script src="dramas_data.js"></script>
   <!-- 主互動應用腳本 -->
   <script src="app.js"></script>
+  <!-- ==========================================
+       互動式心智圖彈窗 (Markmap Modal)
+       ========================================== -->
+  <div id="mindmapModal" class="mindmap-modal">
+    <div class="mindmap-modal-inner">
+      <div class="mindmap-modal-header">
+        <span><i class="fa-solid fa-sitemap"></i> AI 影片製作與剪輯實作課程 · 互動架構心智圖 (Markmap)</span>
+        <button id="closeMindmapBtn" class="btn btn-outline btn-xs" style="color:#fff; border-color:rgba(255,255,255,0.3);"><i class="fa-solid fa-xmark"></i> 關閉</button>
+      </div>
+      <iframe src="講義/ai影片製作與剪輯實作課程心智圖.html" class="mindmap-iframe" title="課程心智圖"></iframe>
+    </div>
+  </div>
+
 </body>
 </html>

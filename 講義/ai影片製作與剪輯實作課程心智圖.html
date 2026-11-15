@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Markmap - AI影片製作與剪輯實作課程</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18/dist/style.css">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden; /* Prevent scrollbars on body */
+      /* Default light background */
+      background: #fff;
+    }
+    svg.markmap {
+      width: 100%;
+      height: 100vh;
+      display: block; /* Ensure SVG takes block space */
+      /* Keep transparent to inherit page background */
+      background: transparent;
+    }
+    /* Dark theme class, matched by the official export */
+    .markmap-dark,
+    .markmap-dark body,
+    .markmap-dark .markmap,
+    .markmap-dark svg.markmap {
+      background: #27272a !important;
+      color: #ffffff !important;
+    }
+    .mm-toolbar-brand {
+      display: none !important;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18"></script>
+  <script>
+    window.markmap = {
+      autoLoader: { 
+        manual: false,
+        toolbar: true 
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader@0.18"></script>
+</head>
+<body>
+  <div class="markmap">
+<script type="text/template">
+---
+markmap:
+  maxWidth: 300
+  initialExpandLevel: 2
+---
+
+# AI影片製作與剪輯實作課程
+## 課前準備
+- 從 Email 開啟雲端講義與複習影片
+- 新朋友下載簡易 6.1，解壓縮後放到桌面
+- 下載影片 Skill 檔案，與簡易程式分清
+- 課程全程分段錄影，課後可依段複習
+- 免費版額度有限，可準備多個 Google 帳號
+## 建立影片 Skill
+### Skill 用途
+- 將多步驟提示整合成可重複使用的技能
+- 支援 Gemini 等 AI 工具，簡化影片腳本製作
+- 可用記事本開啟、修改 Markdown 技能檔
+### 安裝與修改
+- 在 Gemini 設定中開啟「技能」並建立新技能
+- 上傳 skill.md 檔案，名稱使用英文小寫
+- 以「@」呼叫技能；輸入時切換英文模式
+- 修改後另存為所有檔案，副檔名保留 .md
+## AI 故事與腳本
+### 選擇主題
+- 請 Gemini 列出歷史人物，再挑選想製作的角色
+- 主題不限中國歷史，也可選西方人物與其他題材
+- 技能可調整人物、風格與影片規格
+### 生成分鏡腳本
+- 複製提示範本並替換主角名稱、故事內容及風格
+- 免費版可先做四段、每段約八秒的橫式影片
+- 付費額度較高時，可增加段數讓故事更完整
+- 多場景重複出現的主角，先生成定裝照以維持一致
+## Google Flow 製作
+### 開啟與設定
+- 使用個人 Google 帳號啟用 Flow，教育帳號可能無法使用
+- 新建專案並啟動 AI Agent
+- 設定圖片與影片比例；橫式 16:9，直式需預先調整
+- 免費額度每日有限且不累積，留意模型點數消耗
+### Agent 執行流程
+- 將完整腳本貼入 Flow，先請 Agent 閱讀
+- 使用 Shift+Enter 換行，避免尚未完成就送出
+- 生成主角定裝照，再依腳本製作各段首尾圖與影片
+- Agent 可能暫停或要求確認，檢查進度後再指示繼續
+### 生成問題處理
+- 失敗時回到原對話請 AI 重寫該段腳本
+- 遵守 Flow 的安全規範，調整暴力、自傷或敏感情節
+- 免費模型中文發音可能不自然，建議後製另配旁白
+## 素材整理與剪輯
+### 匯出素材
+- 下載各段影片、封面、封底與背景音樂
+- 依序重新命名影片段落，方便後續整理
+- 影片品質依模型與額度選擇，免費版可分日製作
+### 剪輯組合
+- 將封面、影片各段與封底依序接在時間軸上
+- 加入旁白、字幕、作者名稱及背景音樂
+- 音樂對齊影片長度並降低音量，避免蓋過旁白
+- 儲存專案，再以 MP4 格式匯出成品
+## 旁白與字幕
+### 精準配音
+- 在 Gemini 整理分段旁白文案
+- 使用簡易的文字轉語音，逐段配合畫面情境
+- 以文稿匹配將語音與字幕時間對齊
+- 依需求調整聲音、字幕顏色與描邊
+### 多語字幕
+- 從簡易匯出含時間碼的 SRT 字幕檔
+- 請 AI 將字幕翻譯為英文、日文等語言
+- 另存時選擇所有檔案，確認副檔名為 .srt
+- 在 YouTube 工作室新增語言並上傳字幕檔
+## 發佈與複習
+- 將 MP4 上傳至 YouTube 工作室並設定公開權限
+- 確認影片語言與字幕設定，再發布影片
+- 回看雲端講義與分段錄影，透過實作反覆熟悉流程
+- 多練幾次，逐步累積 AI 製作與剪輯能力
+</script>
+  </div>
+</body>
+</html>
+    
